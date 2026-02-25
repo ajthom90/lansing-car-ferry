@@ -1,6 +1,6 @@
 package com.lansingferry.shared.network
 
-import com.lansingferry.shared.model.FerryInfo
+import com.lansingferry.shared.model.raw.RawFerryInfo
 import io.ktor.client.*
 import io.ktor.client.call.*
 import io.ktor.client.request.*
@@ -9,7 +9,7 @@ class FerryApiClient(
     private val httpClient: HttpClient = createHttpClient(),
     private val baseUrl: String = DEFAULT_BASE_URL,
 ) {
-    suspend fun fetchFerryInfo(): FerryInfo {
+    suspend fun fetchFerryInfo(): RawFerryInfo {
         return httpClient.get("$baseUrl/ferry-info.json").body()
     }
 

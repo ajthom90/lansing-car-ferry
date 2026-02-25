@@ -8,6 +8,7 @@ import com.lansingferry.shared.repository.FerryResult
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.StateFlow
 import kotlinx.coroutines.launch
+import java.util.Locale
 
 data class FerryUiState(
     val ferryInfo: FerryInfo? = null,
@@ -28,7 +29,8 @@ class FerryViewModel : ViewModel() {
     fun loadData() {
         viewModelScope.launch {
             _uiState.value = _uiState.value.copy(isLoading = true, errorMessage = null)
-            when (val result = repository.getFerryInfo()) {
+            val locale = Locale.getDefault().language
+            when (val result = repository.getFerryInfo(locale)) {
                 is FerryResult.Success -> {
                     _uiState.value = FerryUiState(ferryInfo = result.data)
                 }
@@ -45,7 +47,8 @@ class FerryViewModel : ViewModel() {
     fun refresh() {
         viewModelScope.launch {
             _uiState.value = _uiState.value.copy(isLoading = true)
-            when (val result = repository.refresh()) {
+            val locale = Locale.getDefault().language
+            when (val result = repository.refresh(locale)) {
                 is FerryResult.Success -> {
                     _uiState.value = FerryUiState(ferryInfo = result.data)
                 }

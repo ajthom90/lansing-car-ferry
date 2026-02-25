@@ -1,6 +1,6 @@
 package com.lansingferry.shared.cache
 
-import com.lansingferry.shared.model.FerryInfo
+import com.lansingferry.shared.model.raw.RawFerryInfo
 import kotlinx.serialization.encodeToString
 import kotlinx.serialization.json.Json
 import okio.FileSystem
@@ -17,20 +17,20 @@ class CacheStorage(
         isLenient = true
     }
 
-    fun save(ferryInfo: FerryInfo) {
-        val data = json.encodeToString(ferryInfo)
+    fun save(rawFerryInfo: RawFerryInfo) {
+        val data = json.encodeToString(rawFerryInfo)
         fileSystem.sink(cachePath).buffer().use { sink ->
             sink.writeUtf8(data)
         }
     }
 
-    fun load(): FerryInfo? {
+    fun load(): RawFerryInfo? {
         if (!fileSystem.exists(cachePath)) return null
         return try {
             val data = fileSystem.source(cachePath).buffer().use { source ->
                 source.readUtf8()
             }
-            json.decodeFromString<FerryInfo>(data)
+            json.decodeFromString<RawFerryInfo>(data)
         } catch (e: Exception) {
             null
         }

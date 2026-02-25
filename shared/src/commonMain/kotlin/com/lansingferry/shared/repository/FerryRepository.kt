@@ -1,7 +1,9 @@
 package com.lansingferry.shared.repository
 
 import com.lansingferry.shared.cache.CacheStorage
+import com.lansingferry.shared.i18n.LocaleResolver
 import com.lansingferry.shared.model.FerryInfo
+import com.lansingferry.shared.model.raw.RawFerryInfo
 import com.lansingferry.shared.network.FerryApiClient
 import kotlinx.datetime.Clock
 import kotlinx.datetime.Instant
@@ -10,14 +12,14 @@ class FerryRepository(
     private val apiClient: FerryApiClient = FerryApiClient(),
     private val cacheStorage: CacheStorage = CacheStorage(),
 ) {
-    private var inMemoryCache: FerryInfo? = null
+    private var inMemoryCache: RawFerryInfo? = null
     private var lastFetchTime: Instant? = null
 
-    suspend fun getFerryInfo(): FerryResult {
+    suspend fun getFerryInfo(locale: String = "en"): FerryResult {
         // 1. Return in-memory cache immediately if fresh
         inMemoryCache?.let { cached ->
             if (!isCacheStale()) {
-                return FerryResult.Success(cached)
+                return FerryResult.Success(LocaleResolver.resolve(cached, locale))
             }
         }
 
@@ -34,25 +36,25 @@ class FerryRepository(
             inMemoryCache = fresh
             lastFetchTime = Clock.System.now()
             cacheStorage.save(fresh)
-            FerryResult.Success(fresh)
+            FerryResult.Success(LocaleResolver.resolve(fresh, locale))
         } catch (e: Exception) {
             // 4. Fall back to cached data on network failure
             inMemoryCache?.let { cached ->
-                FerryResult.Success(cached)
+                FerryResult.Success(LocaleResolver.resolve(cached, locale))
             } ?: FerryResult.Error("No cached data available. Please check your connection.")
         }
     }
 
-    suspend fun refresh(): FerryResult {
+    suspend fun refresh(locale: String = "en"): FerryResult {
         return try {
             val fresh = apiClient.fetchFerryInfo()
             inMemoryCache = fresh
             lastFetchTime = Clock.System.now()
             cacheStorage.save(fresh)
-            FerryResult.Success(fresh)
+            FerryResult.Success(LocaleResolver.resolve(fresh, locale))
         } catch (e: Exception) {
             inMemoryCache?.let { cached ->
-                FerryResult.Success(cached)
+                FerryResult.Success(LocaleResolver.resolve(cached, locale))
             } ?: FerryResult.Error("Unable to refresh. Please check your connection.")
         }
     }

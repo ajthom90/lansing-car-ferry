@@ -9,12 +9,16 @@ final class FerryViewModel {
 
     private let repository = FerryRepository.companion.create()
 
+    private var deviceLocale: String {
+        Locale.current.language.languageCode?.identifier ?? "en"
+    }
+
     func loadData() async {
         isLoading = true
         errorMessage = nil
 
         do {
-            let result = try await repository.getFerryInfo()
+            let result = try await repository.getFerryInfo(locale: deviceLocale)
 
             switch onEnum(of: result) {
             case .success(let success):
@@ -32,7 +36,7 @@ final class FerryViewModel {
 
     func refresh() async {
         do {
-            let result = try await repository.refresh()
+            let result = try await repository.refresh(locale: deviceLocale)
 
             switch onEnum(of: result) {
             case .success(let success):

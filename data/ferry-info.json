@@ -23,18 +23,18 @@
     ],
     "crossingDurationMinutes": 15,
     "approximateCapacity": 12,
-    "serviceNote": "Continuous, not on a fixed schedule—first-come, first-served"
+    "serviceNote": { "en": "Continuous, not on a fixed schedule—first-come, first-served" }
   },
   "locations": {
     "iowa": {
-      "name": "Lansing Marina",
-      "description": "North driveway off Front Street",
+      "name": { "en": "Lansing Marina" },
+      "description": { "en": "North driveway off Front Street" },
       "latitude": 43.3695,
       "longitude": -91.2202
     },
     "wisconsin": {
-      "name": "WIS 82 Landing",
-      "description": "West of Big Slough Boat Landing",
+      "name": { "en": "WIS 82 Landing" },
+      "description": { "en": "West of Big Slough Boat Landing" },
       "latitude": 43.3667,
       "longitude": -91.2105
     }
@@ -42,83 +42,83 @@
   "cameras": [
     {
       "id": "wi-landing",
-      "name": "Wisconsin Ferry Landing",
+      "name": { "en": "Wisconsin Ferry Landing" },
       "streamUrl": "https://iowadotsfs1.us-east-1.skyvdn.com:443/rtplive/d2tv09lb/playlist.m3u8",
       "snapshotUrl": "https://iowadotsnapshot.us-east-1.skyvdn.com/thumbs/d2tv09lb.flv.jpg"
     },
     {
       "id": "ia-landing",
-      "name": "Iowa Ferry Landing",
+      "name": { "en": "Iowa Ferry Landing" },
       "streamUrl": "https://iowadotsfs1.us-east-1.skyvdn.com:443/rtplive/d2tv10lb/playlist.m3u8",
       "snapshotUrl": "https://iowadotsnapshot.us-east-1.skyvdn.com/thumbs/d2tv10lb.flv.jpg"
     },
     {
       "id": "ia-queue",
-      "name": "Iowa Ferry Queue",
+      "name": { "en": "Iowa Ferry Queue" },
       "streamUrl": "https://iowadotsfs1.us-east-1.skyvdn.com:443/rtplive/d2tv11lb/playlist.m3u8",
       "snapshotUrl": "https://iowadotsnapshot.us-east-1.skyvdn.com/thumbs/d2tv11lb.flv.jpg"
     }
   ],
   "vehicleRestrictions": {
     "allowed": [
-      "Cars",
-      "Motorcycles",
-      "Bicycles",
-      "Pedestrians",
-      "Two-axle trucks under 10 tons"
+      { "en": "Cars" },
+      { "en": "Motorcycles" },
+      { "en": "Bicycles" },
+      { "en": "Pedestrians" },
+      { "en": "Two-axle trucks under 10 tons" }
     ],
     "prohibited": [
-      "Trailers",
-      "ATVs",
-      "UTVs",
-      "RVs",
-      "Buses",
-      "Farm equipment",
-      "Hazardous materials"
+      { "en": "Trailers" },
+      { "en": "ATVs" },
+      { "en": "UTVs" },
+      { "en": "RVs" },
+      { "en": "Buses" },
+      { "en": "Farm equipment" },
+      { "en": "Hazardous materials" }
     ],
     "sizeLimits": {
       "heightFeet": 11,
       "lengthFeet": 25,
-      "widthFeetInches": "8 ft 6 in",
+      "widthFeetInches": { "en": "8 ft 6 in" },
       "weightTons": 10
     }
   },
   "faqs": [
     {
-      "question": "How much does the ferry cost?",
-      "answer": "The ferry is free of charge."
+      "question": { "en": "How much does the ferry cost?" },
+      "answer": { "en": "The ferry is free of charge." }
     },
     {
-      "question": "Does the ferry run in winter?",
-      "answer": "Yes, as long as the river is navigable. Severe ice conditions may force temporary closures."
+      "question": { "en": "Does the ferry run in winter?" },
+      "answer": { "en": "Yes, as long as the river is navigable. Severe ice conditions may force temporary closures." }
     },
     {
-      "question": "How long is the crossing?",
-      "answer": "Approximately 15 minutes including loading and unloading."
+      "question": { "en": "How long is the crossing?" },
+      "answer": { "en": "Approximately 15 minutes including loading and unloading." }
     },
     {
-      "question": "How long is the detour if I can't take the ferry?",
-      "answer": "The detour route takes approximately 60–70 minutes."
+      "question": { "en": "How long is the detour if I can't take the ferry?" },
+      "answer": { "en": "The detour route takes approximately 60–70 minutes." }
     },
     {
-      "question": "Is the ferry on a fixed schedule?",
-      "answer": "No, the ferry runs continuously on a first-come, first-served basis."
+      "question": { "en": "Is the ferry on a fixed schedule?" },
+      "answer": { "en": "No, the ferry runs continuously on a first-come, first-served basis." }
     },
     {
-      "question": "Can I take photos on the ferry?",
-      "answer": "Yes, photography is allowed, but please don't delay operations."
+      "question": { "en": "Can I take photos on the ferry?" },
+      "answer": { "en": "Yes, photography is allowed, but please don't delay operations." }
     },
     {
-      "question": "What safety equipment is on board?",
-      "answer": "Life preservers are available. Follow crew instructions at all times."
+      "question": { "en": "What safety equipment is on board?" },
+      "answer": { "en": "Life preservers are available. Follow crew instructions at all times." }
     },
     {
-      "question": "Are there commuter priority hours?",
-      "answer": "Yes, from 5:30–7:30 AM and 3:30–5:30 PM, the ferry favors commuters."
+      "question": { "en": "Are there commuter priority hours?" },
+      "answer": { "en": "Yes, from 5:30–7:30 AM and 3:30–5:30 PM, the ferry favors commuters." }
     },
     {
-      "question": "What are the vehicle size limits?",
-      "answer": "Maximum 11 ft height, 25 ft length, 8 ft 6 in width, and 10 tons weight."
+      "question": { "en": "What are the vehicle size limits?" },
+      "answer": { "en": "Maximum 11 ft height, 25 ft length, 8 ft 6 in width, and 10 tons weight." }
     }
   ],
   "contact": {
