@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- App -->
+    <string name="app_name">عبّارة لانسينغ</string>
+
+    <!-- Tabs -->
+    <string name="tab_home">الرئيسية</string>
+    <string name="tab_cameras">الكاميرات</string>
+    <string name="tab_info">معلومات</string>
+    <string name="tab_faq">الأسئلة</string>
+
+    <!-- Home screen -->
+    <string name="home_title">عبّارة لانسينغ للسيارات</string>
+    <string name="home_facebook_notice">تحقق من صفحة فيسبوك بانتظام للحصول على تحديثات الخدمة وتغييرات الجدول الزمني. لا تحتاج إلى حساب فيسبوك لعرض التحديثات.</string>
+    <string name="home_crossing">العبور</string>
+    <string name="home_crossing_value">%1$d دقيقة</string>
+    <string name="home_capacity">السعة</string>
+    <string name="home_capacity_value">~%1$d مركبة</string>
+    <string name="home_cost">التكلفة</string>
+    <string name="home_cost_value">مجاني</string>
+    <string name="home_locations_section">مواقع العبّارة</string>
+    <string name="home_location_iowa">آيوا</string>
+    <string name="home_location_wisconsin">ويسكونسن</string>
+    <string name="home_resources_section">الموارد</string>
+    <string name="home_link_facebook">تحديثات فيسبوك</string>
+    <string name="home_link_traffic">حركة المرور 511 آيوا</string>
+    <string name="home_link_iowadot">معلومات وزارة النقل</string>
+    <string name="home_open_in_maps">فتح في الخرائط</string>
+
+    <!-- Info screen -->
+    <string name="info_title">معلومات العبّارة</string>
+    <string name="info_schedule_section">الجدول الزمني</string>
+    <string name="info_wisconsin_departure">مغادرة ويسكونسن</string>
+    <string name="info_iowa_departure">مغادرة آيوا</string>
+    <string name="info_holiday_hours">ساعات العطلات</string>
+    <string name="info_commuter_priority">أولوية المسافرين</string>
+    <string name="info_vehicles_section">المركبات</string>
+    <string name="info_allowed">مسموح</string>
+    <string name="info_prohibited">ممنوع</string>
+    <string name="info_size_limits_section">حدود الحجم</string>
+    <string name="info_height">الارتفاع</string>
+    <string name="info_height_value">%1$d قدم</string>
+    <string name="info_length">الطول</string>
+    <string name="info_length_value">%1$d قدم</string>
+    <string name="info_width">العرض</string>
+    <string name="info_weight">الوزن</string>
+    <string name="info_weight_value">%1$d طن</string>
+    <string name="info_time_am">ص</string>
+    <string name="info_time_pm">م</string>
+
+    <!-- Cameras screen -->
+    <string name="cameras_title">الكاميرات المباشرة</string>
+
+    <!-- FAQ screen -->
+    <string name="faq_title">الأسئلة الشائعة</string>
+
+    <!-- Accessibility -->
+    <string name="a11y_expand">توسيع</string>
+    <string name="a11y_collapse">طي</string>
+    <string name="a11y_back">رجوع</string>
+
+    <!-- Loading/Error states -->
+    <string name="error_unexpected">حدث خطأ غير متوقع.</string>
+</resources>

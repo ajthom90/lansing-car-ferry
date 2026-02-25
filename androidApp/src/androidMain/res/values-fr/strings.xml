@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- App -->
+    <string name="app_name">Traversier de Lansing</string>
+
+    <!-- Tabs -->
+    <string name="tab_home">Accueil</string>
+    <string name="tab_cameras">Caméras</string>
+    <string name="tab_info">Info</string>
+    <string name="tab_faq">FAQ</string>
+
+    <!-- Home screen -->
+    <string name="home_title">Traversier de Lansing</string>
+    <string name="home_facebook_notice">Consultez régulièrement la page Facebook pour les mises à jour du service et les changements d\'horaire. Aucun compte Facebook n\'est nécessaire pour voir les mises à jour.</string>
+    <string name="home_crossing">Traversée</string>
+    <string name="home_crossing_value">%1$d min</string>
+    <string name="home_capacity">Capacité</string>
+    <string name="home_capacity_value">~%1$d véhicules</string>
+    <string name="home_cost">Coût</string>
+    <string name="home_cost_value">GRATUIT</string>
+    <string name="home_locations_section">Emplacements du traversier</string>
+    <string name="home_location_iowa">Iowa</string>
+    <string name="home_location_wisconsin">Wisconsin</string>
+    <string name="home_resources_section">Ressources</string>
+    <string name="home_link_facebook">Mises à jour Facebook</string>
+    <string name="home_link_traffic">Trafic 511 Iowa</string>
+    <string name="home_link_iowadot">Info DOT Iowa</string>
+    <string name="home_open_in_maps">Ouvrir dans Plans</string>
+
+    <!-- Info screen -->
+    <string name="info_title">Info du traversier</string>
+    <string name="info_schedule_section">Horaire</string>
+    <string name="info_wisconsin_departure">Départ du Wisconsin</string>
+    <string name="info_iowa_departure">Départ de l\'Iowa</string>
+    <string name="info_holiday_hours">Horaires des jours fériés</string>
+    <string name="info_commuter_priority">Priorité aux navetteurs</string>
+    <string name="info_vehicles_section">Véhicules</string>
+    <string name="info_allowed">Autorisés</string>
+    <string name="info_prohibited">Interdits</string>
+    <string name="info_size_limits_section">Limites de taille</string>
+    <string name="info_height">Hauteur</string>
+    <string name="info_height_value">%1$d pieds</string>
+    <string name="info_length">Longueur</string>
+    <string name="info_length_value">%1$d pieds</string>
+    <string name="info_width">Largeur</string>
+    <string name="info_weight">Poids</string>
+    <string name="info_weight_value">%1$d tonnes</string>
+    <string name="info_time_am">AM</string>
+    <string name="info_time_pm">PM</string>
+
+    <!-- Cameras screen -->
+    <string name="cameras_title">Caméras en direct</string>
+
+    <!-- FAQ screen -->
+    <string name="faq_title">Foire aux questions</string>
+
+    <!-- Accessibility -->
+    <string name="a11y_expand">Développer</string>
+    <string name="a11y_collapse">Réduire</string>
+    <string name="a11y_back">Retour</string>
+
+    <!-- Loading/Error states -->
+    <string name="error_unexpected">Une erreur inattendue s\'est produite.</string>
+</resources>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- App -->
+    <string name="app_name">兰辛渡轮</string>
+
+    <!-- Tabs -->
+    <string name="tab_home">首页</string>
+    <string name="tab_cameras">摄像头</string>
+    <string name="tab_info">信息</string>
+    <string name="tab_faq">常见问题</string>
+
+    <!-- Home screen -->
+    <string name="home_title">兰辛汽车渡轮</string>
+    <string name="home_facebook_notice">请定期查看Facebook页面获取服务更新和时刻表变更。无需Facebook账号即可查看更新。</string>
+    <string name="home_crossing">渡河</string>
+    <string name="home_crossing_value">%1$d分钟</string>
+    <string name="home_capacity">容量</string>
+    <string name="home_capacity_value">约%1$d辆车</string>
+    <string name="home_cost">费用</string>
+    <string name="home_cost_value">免费</string>
+    <string name="home_locations_section">渡轮位置</string>
+    <string name="home_location_iowa">爱荷华</string>
+    <string name="home_location_wisconsin">威斯康星</string>
+    <string name="home_resources_section">资源</string>
+    <string name="home_link_facebook">Facebook更新</string>
+    <string name="home_link_traffic">511爱荷华交通</string>
+    <string name="home_link_iowadot">爱荷华交通部信息</string>
+    <string name="home_open_in_maps">在地图中打开</string>
+
+    <!-- Info screen -->
+    <string name="info_title">渡轮信息</string>
+    <string name="info_schedule_section">时刻表</string>
+    <string name="info_wisconsin_departure">威斯康星出发</string>
+    <string name="info_iowa_departure">爱荷华出发</string>
+    <string name="info_holiday_hours">节假日时间</string>
+    <string name="info_commuter_priority">通勤优先</string>
+    <string name="info_vehicles_section">车辆</string>
+    <string name="info_allowed">允许</string>
+    <string name="info_prohibited">禁止</string>
+    <string name="info_size_limits_section">尺寸限制</string>
+    <string name="info_height">高度</string>
+    <string name="info_height_value">%1$d英尺</string>
+    <string name="info_length">长度</string>
+    <string name="info_length_value">%1$d英尺</string>
+    <string name="info_width">宽度</string>
+    <string name="info_weight">重量</string>
+    <string name="info_weight_value">%1$d吨</string>
+    <string name="info_time_am">上午</string>
+    <string name="info_time_pm">下午</string>
+
+    <!-- Cameras screen -->
+    <string name="cameras_title">实时摄像头</string>
+
+    <!-- FAQ screen -->
+    <string name="faq_title">常见问题</string>
+
+    <!-- Accessibility -->
+    <string name="a11y_expand">展开</string>
+    <string name="a11y_collapse">收起</string>
+    <string name="a11y_back">返回</string>
+
+    <!-- Loading/Error states -->
+    <string name="error_unexpected">发生了意外错误。</string>
+</resources>

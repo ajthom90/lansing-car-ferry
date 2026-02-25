@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- App -->
+    <string name="app_name">Doonida Lansing</string>
+
+    <!-- Tabs -->
+    <string name="tab_home">Bogga hore</string>
+    <string name="tab_cameras">Kamaradaha</string>
+    <string name="tab_info">Macluumaad</string>
+    <string name="tab_faq">Su\'aalaha</string>
+
+    <!-- Home screen -->
+    <string name="home_title">Doonida Baabuurta Lansing</string>
+    <string name="home_facebook_notice">Si joogto ah fiiri bogga Facebook ee cusbooneysiyaha adeegga iyo isbeddelka jadwalka. Looma baahna akoon Facebook si aad u aragto cusbooneysiyaha.</string>
+    <string name="home_crossing">Gudbinta</string>
+    <string name="home_crossing_value">%1$d daqiiqo</string>
+    <string name="home_capacity">Awoodda</string>
+    <string name="home_capacity_value">~%1$d gaadhi</string>
+    <string name="home_cost">Qiimaha</string>
+    <string name="home_cost_value">BILAASH</string>
+    <string name="home_locations_section">Goobaha doonida</string>
+    <string name="home_location_iowa">Iowa</string>
+    <string name="home_location_wisconsin">Wisconsin</string>
+    <string name="home_resources_section">Kheyraadka</string>
+    <string name="home_link_facebook">Cusbooneysiyaha Facebook</string>
+    <string name="home_link_traffic">Taraafikada 511 Iowa</string>
+    <string name="home_link_iowadot">Macluumaadka Iowa DOT</string>
+    <string name="home_open_in_maps">Ku fur Khariidadaha</string>
+
+    <!-- Info screen -->
+    <string name="info_title">Macluumaadka doonida</string>
+    <string name="info_schedule_section">Jadwalka</string>
+    <string name="info_wisconsin_departure">Bixitaanka Wisconsin</string>
+    <string name="info_iowa_departure">Bixitaanka Iowa</string>
+    <string name="info_holiday_hours">Saacadaha fasaxa</string>
+    <string name="info_commuter_priority">Mudnaanta shaqo-tagayaasha</string>
+    <string name="info_vehicles_section">Gaadiidka</string>
+    <string name="info_allowed">La ogol yahay</string>
+    <string name="info_prohibited">Laga mamnuucay</string>
+    <string name="info_size_limits_section">Xadka cabbirka</string>
+    <string name="info_height">Dhererka</string>
+    <string name="info_height_value">%1$d fiit</string>
+    <string name="info_length">Dhererka</string>
+    <string name="info_length_value">%1$d fiit</string>
+    <string name="info_width">Balaca</string>
+    <string name="info_weight">Miisaanka</string>
+    <string name="info_weight_value">%1$d tan</string>
+    <string name="info_time_am">SN</string>
+    <string name="info_time_pm">GN</string>
+
+    <!-- Cameras screen -->
+    <string name="cameras_title">Kamaradaha tooska ah</string>
+
+    <!-- FAQ screen -->
+    <string name="faq_title">Su\'aalaha inta badan la isweydiiyo</string>
+
+    <!-- Accessibility -->
+    <string name="a11y_expand">Ballaadhi</string>
+    <string name="a11y_collapse">Yaree</string>
+    <string name="a11y_back">Dib u noqo</string>
+
+    <!-- Loading/Error states -->
+    <string name="error_unexpected">Khalad aan la filayn ayaa dhacay.</string>
+</resources>
