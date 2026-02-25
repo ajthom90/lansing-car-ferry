@@ -1,7 +1,5 @@
 package com.lansingferry.android.ui.navigation
 
-import androidx.compose.foundation.layout.Box
-import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.padding
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.Home
@@ -23,14 +21,18 @@ import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.currentBackStackEntryAsState
 import androidx.navigation.compose.rememberNavController
+import androidx.navigation.toRoute
+import com.lansingferry.android.ui.screens.CameraDetailScreen
 import com.lansingferry.android.ui.screens.HomeScreen
 import com.lansingferry.android.ui.screens.FAQScreen
 import com.lansingferry.android.ui.screens.InfoScreen
+import com.lansingferry.android.ui.screens.LiveCamerasScreen
 import com.lansingferry.shared.model.FerryInfo
 import kotlinx.serialization.Serializable
 
 @Serializable data object HomeRoute
 @Serializable data object CamerasRoute
+@Serializable data class CameraDetailRoute(val cameraName: String, val streamUrl: String)
 @Serializable data object InfoRoute
 @Serializable data object FaqRoute
 
@@ -90,7 +92,20 @@ fun FerryNavigation(
                 HomeScreen(ferryInfo = ferryInfo)
             }
             composable<CamerasRoute> {
-                Box(Modifier.fillMaxSize()) { Text("Cameras") }
+                LiveCamerasScreen(
+                    cameras = ferryInfo.cameras,
+                    onCameraClick = { camera ->
+                        navController.navigate(CameraDetailRoute(camera.name, camera.streamUrl))
+                    },
+                )
+            }
+            composable<CameraDetailRoute> { backStackEntry ->
+                val route = backStackEntry.toRoute<CameraDetailRoute>()
+                CameraDetailScreen(
+                    cameraName = route.cameraName,
+                    streamUrl = route.streamUrl,
+                    onBack = { navController.popBackStack() },
+                )
             }
             composable<InfoRoute> {
                 InfoScreen(ferryInfo = ferryInfo)
