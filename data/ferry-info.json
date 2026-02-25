@@ -29,14 +29,14 @@
     "iowa": {
       "name": "Lansing Marina",
       "description": "North driveway off Front Street",
-      "latitude": 43.3578,
-      "longitude": -91.2188
+      "latitude": 43.3695,
+      "longitude": -91.2202
     },
     "wisconsin": {
       "name": "WIS 82 Landing",
       "description": "West of Big Slough Boat Landing",
-      "latitude": 43.3575,
-      "longitude": -91.2050
+      "latitude": 43.3667,
+      "longitude": -91.2105
     }
   },
   "cameras": [
