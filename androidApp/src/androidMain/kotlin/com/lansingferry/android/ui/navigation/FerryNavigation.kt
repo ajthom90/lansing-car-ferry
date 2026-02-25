@@ -89,7 +89,11 @@ fun FerryNavigation(
             modifier = Modifier.padding(innerPadding),
         ) {
             composable<HomeRoute> {
-                HomeScreen(ferryInfo = ferryInfo)
+                HomeScreen(
+                    ferryInfo = ferryInfo,
+                    isRefreshing = false,
+                    onRefresh = onRefresh,
+                )
             }
             composable<CamerasRoute> {
                 LiveCamerasScreen(

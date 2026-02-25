@@ -30,6 +30,7 @@ import androidx.compose.material3.IconButton
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Text
 import androidx.compose.material3.TopAppBar
+import androidx.compose.material3.pulltorefresh.PullToRefreshBox
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
@@ -42,83 +43,93 @@ import com.lansingferry.shared.model.Location
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
-fun HomeScreen(ferryInfo: FerryInfo) {
+fun HomeScreen(
+    ferryInfo: FerryInfo,
+    isRefreshing: Boolean,
+    onRefresh: () -> Unit,
+) {
     val context = LocalContext.current
 
     Column(modifier = Modifier.fillMaxSize()) {
         TopAppBar(title = { Text("Lansing Car Ferry") })
 
-        Column(
-            modifier = Modifier
-                .fillMaxSize()
-                .verticalScroll(rememberScrollState())
-                .padding(16.dp),
-            verticalArrangement = Arrangement.spacedBy(16.dp),
+        PullToRefreshBox(
+            isRefreshing = isRefreshing,
+            onRefresh = onRefresh,
+            modifier = Modifier.fillMaxSize(),
         ) {
-            // Status banner
-            Card(
-                colors = CardDefaults.cardColors(
-                    containerColor = MaterialTheme.colorScheme.primaryContainer,
-                ),
-                modifier = Modifier.fillMaxWidth(),
+            Column(
+                modifier = Modifier
+                    .fillMaxSize()
+                    .verticalScroll(rememberScrollState())
+                    .padding(16.dp),
+                verticalArrangement = Arrangement.spacedBy(16.dp),
             ) {
-                Text(
-                    text = ferryInfo.schedule.serviceNote,
-                    style = MaterialTheme.typography.bodyMedium,
-                    textAlign = TextAlign.Center,
-                    color = MaterialTheme.colorScheme.onPrimaryContainer,
-                    modifier = Modifier.padding(16.dp).fillMaxWidth(),
-                )
-            }
+                // Status banner
+                Card(
+                    colors = CardDefaults.cardColors(
+                        containerColor = MaterialTheme.colorScheme.primaryContainer,
+                    ),
+                    modifier = Modifier.fillMaxWidth(),
+                ) {
+                    Text(
+                        text = ferryInfo.schedule.serviceNote,
+                        style = MaterialTheme.typography.bodyMedium,
+                        textAlign = TextAlign.Center,
+                        color = MaterialTheme.colorScheme.onPrimaryContainer,
+                        modifier = Modifier.padding(16.dp).fillMaxWidth(),
+                    )
+                }
 
-            // Quick info cards
-            Row(
-                horizontalArrangement = Arrangement.spacedBy(12.dp),
-                modifier = Modifier.fillMaxWidth(),
-            ) {
-                InfoCard(
-                    icon = Icons.Default.AccessTime,
-                    title = "Crossing",
-                    value = "${ferryInfo.schedule.crossingDurationMinutes} min",
-                    modifier = Modifier.weight(1f),
-                )
-                InfoCard(
-                    icon = Icons.Default.DirectionsCar,
-                    title = "Capacity",
-                    value = "~${ferryInfo.schedule.approximateCapacity} vehicles",
-                    modifier = Modifier.weight(1f),
-                )
-                InfoCard(
-                    icon = Icons.Default.MoneyOff,
-                    title = "Cost",
-                    value = "FREE",
-                    modifier = Modifier.weight(1f),
-                )
-            }
+                // Quick info cards
+                Row(
+                    horizontalArrangement = Arrangement.spacedBy(12.dp),
+                    modifier = Modifier.fillMaxWidth(),
+                ) {
+                    InfoCard(
+                        icon = Icons.Default.AccessTime,
+                        title = "Crossing",
+                        value = "${ferryInfo.schedule.crossingDurationMinutes} min",
+                        modifier = Modifier.weight(1f),
+                    )
+                    InfoCard(
+                        icon = Icons.Default.DirectionsCar,
+                        title = "Capacity",
+                        value = "~${ferryInfo.schedule.approximateCapacity} vehicles",
+                        modifier = Modifier.weight(1f),
+                    )
+                    InfoCard(
+                        icon = Icons.Default.MoneyOff,
+                        title = "Cost",
+                        value = "FREE",
+                        modifier = Modifier.weight(1f),
+                    )
+                }
 
-            // Locations
-            Text("Ferry Locations", style = MaterialTheme.typography.titleMedium)
+                // Locations
+                Text("Ferry Locations", style = MaterialTheme.typography.titleMedium)
 
-            LocationRow(label = "Iowa", location = ferryInfo.locations.iowa) {
-                val uri = Uri.parse("geo:${ferryInfo.locations.iowa.latitude},${ferryInfo.locations.iowa.longitude}?q=${ferryInfo.locations.iowa.latitude},${ferryInfo.locations.iowa.longitude}(${Uri.encode(ferryInfo.locations.iowa.name)})")
-                context.startActivity(Intent(Intent.ACTION_VIEW, uri))
-            }
-            LocationRow(label = "Wisconsin", location = ferryInfo.locations.wisconsin) {
-                val uri = Uri.parse("geo:${ferryInfo.locations.wisconsin.latitude},${ferryInfo.locations.wisconsin.longitude}?q=${ferryInfo.locations.wisconsin.latitude},${ferryInfo.locations.wisconsin.longitude}(${Uri.encode(ferryInfo.locations.wisconsin.name)})")
-                context.startActivity(Intent(Intent.ACTION_VIEW, uri))
-            }
+                LocationRow(label = "Iowa", location = ferryInfo.locations.iowa) {
+                    val uri = Uri.parse("geo:${ferryInfo.locations.iowa.latitude},${ferryInfo.locations.iowa.longitude}?q=${ferryInfo.locations.iowa.latitude},${ferryInfo.locations.iowa.longitude}(${Uri.encode(ferryInfo.locations.iowa.name)})")
+                    context.startActivity(Intent(Intent.ACTION_VIEW, uri))
+                }
+                LocationRow(label = "Wisconsin", location = ferryInfo.locations.wisconsin) {
+                    val uri = Uri.parse("geo:${ferryInfo.locations.wisconsin.latitude},${ferryInfo.locations.wisconsin.longitude}?q=${ferryInfo.locations.wisconsin.latitude},${ferryInfo.locations.wisconsin.longitude}(${Uri.encode(ferryInfo.locations.wisconsin.name)})")
+                    context.startActivity(Intent(Intent.ACTION_VIEW, uri))
+                }
 
-            // Links
-            Text("Resources", style = MaterialTheme.typography.titleMedium)
+                // Links
+                Text("Resources", style = MaterialTheme.typography.titleMedium)
 
-            LinkRow(icon = Icons.Default.Link, label = "Facebook Updates") {
-                context.startActivity(Intent(Intent.ACTION_VIEW, Uri.parse(ferryInfo.links.facebook)))
-            }
-            LinkRow(icon = Icons.Default.Traffic, label = "511 Iowa Traffic") {
-                context.startActivity(Intent(Intent.ACTION_VIEW, Uri.parse(ferryInfo.links.traffic)))
-            }
-            LinkRow(icon = Icons.Default.Language, label = "Iowa DOT Info") {
-                context.startActivity(Intent(Intent.ACTION_VIEW, Uri.parse(ferryInfo.links.iowadot)))
+                LinkRow(icon = Icons.Default.Link, label = "Facebook Updates") {
+                    context.startActivity(Intent(Intent.ACTION_VIEW, Uri.parse(ferryInfo.links.facebook)))
+                }
+                LinkRow(icon = Icons.Default.Traffic, label = "511 Iowa Traffic") {
+                    context.startActivity(Intent(Intent.ACTION_VIEW, Uri.parse(ferryInfo.links.traffic)))
+                }
+                LinkRow(icon = Icons.Default.Language, label = "Iowa DOT Info") {
+                    context.startActivity(Intent(Intent.ACTION_VIEW, Uri.parse(ferryInfo.links.iowadot)))
+                }
             }
         }
     }
