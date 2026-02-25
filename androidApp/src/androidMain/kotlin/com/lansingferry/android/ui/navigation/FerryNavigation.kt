@@ -23,6 +23,7 @@ import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.currentBackStackEntryAsState
 import androidx.navigation.compose.rememberNavController
+import com.lansingferry.android.ui.screens.HomeScreen
 import com.lansingferry.shared.model.FerryInfo
 import kotlinx.serialization.Serializable
 
@@ -84,7 +85,7 @@ fun FerryNavigation(
             modifier = Modifier.padding(innerPadding),
         ) {
             composable<HomeRoute> {
-                Box(Modifier.fillMaxSize()) { Text("Home") }
+                HomeScreen(ferryInfo = ferryInfo)
             }
             composable<CamerasRoute> {
                 Box(Modifier.fillMaxSize()) { Text("Cameras") }
