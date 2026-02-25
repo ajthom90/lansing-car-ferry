@@ -1,0 +1,133 @@
+{
+  "schedule": {
+    "regularHours": {
+      "wisconsinDeparture": { "start": "05:30", "end": "21:00" },
+      "iowaDeparture": { "start": "05:45", "end": "21:15" }
+    },
+    "holidayHours": {
+      "start": "07:00",
+      "end": "19:00"
+    },
+    "commuterPriorityWindows": [
+      { "start": "05:30", "end": "07:30" },
+      { "start": "15:30", "end": "17:30" }
+    ],
+    "holidays": [
+      "2026-05-25",
+      "2026-07-04",
+      "2026-09-07",
+      "2026-11-11",
+      "2026-11-26",
+      "2026-12-25",
+      "2027-01-01"
+    ],
+    "crossingDurationMinutes": 15,
+    "approximateCapacity": 12,
+    "serviceNote": "Continuous, not on a fixed schedule—first-come, first-served"
+  },
+  "locations": {
+    "iowa": {
+      "name": "Lansing Marina",
+      "description": "North driveway off Front Street",
+      "latitude": 43.3578,
+      "longitude": -91.2188
+    },
+    "wisconsin": {
+      "name": "WIS 82 Landing",
+      "description": "West of Big Slough Boat Landing",
+      "latitude": 43.3575,
+      "longitude": -91.2050
+    }
+  },
+  "cameras": [
+    {
+      "id": "wi-landing",
+      "name": "Wisconsin Ferry Landing",
+      "streamUrl": "https://iowadotsfs1.us-east-1.skyvdn.com:443/rtplive/d2tv09lb/playlist.m3u8",
+      "snapshotUrl": "https://iowadotsnapshot.us-east-1.skyvdn.com/thumbs/d2tv09lb.flv.jpg"
+    },
+    {
+      "id": "ia-landing",
+      "name": "Iowa Ferry Landing",
+      "streamUrl": "https://iowadotsfs1.us-east-1.skyvdn.com:443/rtplive/d2tv10lb/playlist.m3u8",
+      "snapshotUrl": "https://iowadotsnapshot.us-east-1.skyvdn.com/thumbs/d2tv10lb.flv.jpg"
+    },
+    {
+      "id": "ia-queue",
+      "name": "Iowa Ferry Queue",
+      "streamUrl": "https://iowadotsfs1.us-east-1.skyvdn.com:443/rtplive/d2tv11lb/playlist.m3u8",
+      "snapshotUrl": "https://iowadotsnapshot.us-east-1.skyvdn.com/thumbs/d2tv11lb.flv.jpg"
+    }
+  ],
+  "vehicleRestrictions": {
+    "allowed": [
+      "Cars",
+      "Motorcycles",
+      "Bicycles",
+      "Pedestrians",
+      "Two-axle trucks under 10 tons"
+    ],
+    "prohibited": [
+      "Trailers",
+      "ATVs",
+      "UTVs",
+      "RVs",
+      "Buses",
+      "Farm equipment",
+      "Hazardous materials"
+    ],
+    "sizeLimits": {
+      "heightFeet": 11,
+      "lengthFeet": 25,
+      "widthFeetInches": "8 ft 6 in",
+      "weightTons": 10
+    }
+  },
+  "faqs": [
+    {
+      "question": "How much does the ferry cost?",
+      "answer": "The ferry is free of charge."
+    },
+    {
+      "question": "Does the ferry run in winter?",
+      "answer": "Yes, as long as the river is navigable. Severe ice conditions may force temporary closures."
+    },
+    {
+      "question": "How long is the crossing?",
+      "answer": "Approximately 15 minutes including loading and unloading."
+    },
+    {
+      "question": "How long is the detour if I can't take the ferry?",
+      "answer": "The detour route takes approximately 60–70 minutes."
+    },
+    {
+      "question": "Is the ferry on a fixed schedule?",
+      "answer": "No, the ferry runs continuously on a first-come, first-served basis."
+    },
+    {
+      "question": "Can I take photos on the ferry?",
+      "answer": "Yes, photography is allowed, but please don't delay operations."
+    },
+    {
+      "question": "What safety equipment is on board?",
+      "answer": "Life preservers are available. Follow crew instructions at all times."
+    },
+    {
+      "question": "Are there commuter priority hours?",
+      "answer": "Yes, from 5:30–7:30 AM and 3:30–5:30 PM, the ferry favors commuters."
+    },
+    {
+      "question": "What are the vehicle size limits?",
+      "answer": "Maximum 11 ft height, 25 ft length, 8 ft 6 in width, and 10 tons weight."
+    }
+  ],
+  "contact": {
+    "name": "Pete Hjelmstad",
+    "email": "pete.hjelmstad@iowadot.us"
+  },
+  "links": {
+    "facebook": "https://www.facebook.com/LansingBridge",
+    "traffic": "https://511ia.org",
+    "iowadot": "https://iowadot.gov/modes-travel/roads-highways/major-construction-projects/mississippi-river-bridge-lansing/car-ferry"
+  }
+}
