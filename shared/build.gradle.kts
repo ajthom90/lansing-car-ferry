@@ -46,7 +46,7 @@ kotlin {
 }
 
 android {
-    namespace = "com.lansingferry.shared"
+    namespace = "dev.ajthom.lansingferry.shared"
     compileSdk = libs.versions.android.compileSdk.get().toInt()
 
     defaultConfig {

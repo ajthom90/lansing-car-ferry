@@ -293,7 +293,7 @@
 				OTHER_LDFLAGS = (
 					"-ObjC",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.lansingferry.ios;
+				PRODUCT_BUNDLE_IDENTIFIER = dev.ajthom.lansingferry.ios;
 				SDKROOT = iphoneos;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -376,7 +376,7 @@
 				OTHER_LDFLAGS = (
 					"-ObjC",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.lansingferry.ios;
+				PRODUCT_BUNDLE_IDENTIFIER = dev.ajthom.lansingferry.ios;
 				SDKROOT = iphoneos;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

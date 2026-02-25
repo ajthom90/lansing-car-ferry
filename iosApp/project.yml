@@ -1,6 +1,6 @@
 name: LansingFerry
 options:
-  bundleIdPrefix: com.lansingferry
+  bundleIdPrefix: dev.ajthom.lansingferry
   deploymentTarget:
     iOS: "17.0"
   xcodeVersion: "16.0"
@@ -17,7 +17,7 @@ targets:
     settings:
       base:
         INFOPLIST_FILE: LansingFerry/Info.plist
-        PRODUCT_BUNDLE_IDENTIFIER: com.lansingferry.ios
+        PRODUCT_BUNDLE_IDENTIFIER: dev.ajthom.lansingferry.ios
         OTHER_LDFLAGS: ["-ObjC"]
         SWIFT_VERSION: "5.0"
         FRAMEWORK_SEARCH_PATHS[sdk=iphonesimulator*]:

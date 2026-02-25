@@ -35,11 +35,11 @@ kotlin {
 }
 
 android {
-    namespace = "com.lansingferry.android"
+    namespace = "dev.ajthom.lansingferry"
     compileSdk = libs.versions.android.compileSdk.get().toInt()
 
     defaultConfig {
-        applicationId = "com.lansingferry.android"
+        applicationId = "dev.ajthom.lansingferry"
         minSdk = libs.versions.android.minSdk.get().toInt()
         targetSdk = libs.versions.android.targetSdk.get().toInt()
         versionCode = 1
