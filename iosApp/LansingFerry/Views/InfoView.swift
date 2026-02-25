@@ -10,7 +10,6 @@ struct InfoView: View {
                 scheduleSection
                 vehicleRestrictionsSection
                 sizeLimitsSection
-                contactSection
             }
             .navigationTitle("Ferry Info")
         }
@@ -19,20 +18,20 @@ struct InfoView: View {
     private var scheduleSection: some View {
         Section("Schedule") {
             LabeledContent("Wisconsin Side") {
-                Text("\(ferryInfo.schedule.regularHours.wisconsinDeparture.start) – \(ferryInfo.schedule.regularHours.wisconsinDeparture.end)")
+                Text(formatRange(ferryInfo.schedule.regularHours.wisconsinDeparture.start, ferryInfo.schedule.regularHours.wisconsinDeparture.end))
             }
             LabeledContent("Iowa Side") {
-                Text("\(ferryInfo.schedule.regularHours.iowaDeparture.start) – \(ferryInfo.schedule.regularHours.iowaDeparture.end)")
+                Text(formatRange(ferryInfo.schedule.regularHours.iowaDeparture.start, ferryInfo.schedule.regularHours.iowaDeparture.end))
             }
             LabeledContent("Holiday Hours") {
-                Text("\(ferryInfo.schedule.holidayHours.start) – \(ferryInfo.schedule.holidayHours.end)")
+                Text(formatRange(ferryInfo.schedule.holidayHours.start, ferryInfo.schedule.holidayHours.end))
             }
 
             VStack(alignment: .leading, spacing: 4) {
                 Text("Commuter Priority")
                     .font(.subheadline)
                 ForEach(Array(ferryInfo.schedule.commuterPriorityWindows), id: \.start) { window in
-                    Text("\(window.start) – \(window.end)")
+                    Text(formatRange(window.start, window.end))
                         .font(.subheadline)
                         .foregroundStyle(.secondary)
                 }
@@ -66,10 +65,17 @@ struct InfoView: View {
         }
     }
 
-    private var contactSection: some View {
-        Section("Contact") {
-            LabeledContent("Name", value: ferryInfo.contact.name)
-            Link(ferryInfo.contact.email, destination: URL(string: "mailto:\(ferryInfo.contact.email)")!)
-        }
+    private func formatTime(_ time: String) -> String {
+        let parts = time.split(separator: ":")
+        guard parts.count == 2,
+              let hour = Int(parts[0]),
+              let minute = Int(parts[1]) else { return time }
+        let period = hour >= 12 ? "PM" : "AM"
+        let displayHour = hour == 0 ? 12 : (hour > 12 ? hour - 12 : hour)
+        return minute == 0 ? "\(displayHour) \(period)" : "\(displayHour):\(String(format: "%02d", minute)) \(period)"
+    }
+
+    private func formatRange(_ start: String, _ end: String) -> String {
+        "\(formatTime(start)) – \(formatTime(end))"
     }
 }
