@@ -11,24 +11,24 @@ struct InfoView: View {
                 vehicleRestrictionsSection
                 sizeLimitsSection
             }
-            .navigationTitle("Ferry Info")
+            .navigationTitle(String(localized: "Ferry Info"))
         }
     }
 
     private var scheduleSection: some View {
-        Section("Schedule") {
-            LabeledContent("Wisconsin Side") {
+        Section(String(localized: "Schedule")) {
+            LabeledContent(String(localized: "Wisconsin Side")) {
                 Text(formatRange(ferryInfo.schedule.regularHours.wisconsinDeparture.start, ferryInfo.schedule.regularHours.wisconsinDeparture.end))
             }
-            LabeledContent("Iowa Side") {
+            LabeledContent(String(localized: "Iowa Side")) {
                 Text(formatRange(ferryInfo.schedule.regularHours.iowaDeparture.start, ferryInfo.schedule.regularHours.iowaDeparture.end))
             }
-            LabeledContent("Holiday Hours") {
+            LabeledContent(String(localized: "Holiday Hours")) {
                 Text(formatRange(ferryInfo.schedule.holidayHours.start, ferryInfo.schedule.holidayHours.end))
             }
 
             VStack(alignment: .leading, spacing: 4) {
-                Text("Commuter Priority")
+                Text(String(localized: "Commuter Priority"))
                     .font(.subheadline)
                 ForEach(Array(ferryInfo.schedule.commuterPriorityWindows), id: \.start) { window in
                     Text(formatRange(window.start, window.end))
@@ -40,14 +40,14 @@ struct InfoView: View {
     }
 
     private var vehicleRestrictionsSection: some View {
-        Section("Vehicles") {
-            DisclosureGroup("Allowed") {
+        Section(String(localized: "Vehicles")) {
+            DisclosureGroup(String(localized: "Allowed")) {
                 ForEach(Array(ferryInfo.vehicleRestrictions.allowed), id: \.self) { vehicle in
                     Label(vehicle, systemImage: "checkmark.circle.fill")
                         .foregroundStyle(.green)
                 }
             }
-            DisclosureGroup("Prohibited") {
+            DisclosureGroup(String(localized: "Prohibited")) {
                 ForEach(Array(ferryInfo.vehicleRestrictions.prohibited), id: \.self) { vehicle in
                     Label(vehicle, systemImage: "xmark.circle.fill")
                         .foregroundStyle(.red)
@@ -57,11 +57,11 @@ struct InfoView: View {
     }
 
     private var sizeLimitsSection: some View {
-        Section("Size Limits") {
-            LabeledContent("Height", value: String(localized: "\(Int(ferryInfo.vehicleRestrictions.sizeLimits.heightFeet)) ft"))
-            LabeledContent("Length", value: String(localized: "\(Int(ferryInfo.vehicleRestrictions.sizeLimits.lengthFeet)) ft"))
-            LabeledContent("Width", value: ferryInfo.vehicleRestrictions.sizeLimits.widthFeetInches)
-            LabeledContent("Weight", value: String(localized: "\(Int(ferryInfo.vehicleRestrictions.sizeLimits.weightTons)) tons"))
+        Section(String(localized: "Size Limits")) {
+            LabeledContent(String(localized: "Height"), value: String(localized: "\(Int(ferryInfo.vehicleRestrictions.sizeLimits.heightFeet)) ft"))
+            LabeledContent(String(localized: "Length"), value: String(localized: "\(Int(ferryInfo.vehicleRestrictions.sizeLimits.lengthFeet)) ft"))
+            LabeledContent(String(localized: "Width"), value: ferryInfo.vehicleRestrictions.sizeLimits.widthFeetInches)
+            LabeledContent(String(localized: "Weight"), value: String(localized: "\(Int(ferryInfo.vehicleRestrictions.sizeLimits.weightTons)) tons"))
         }
     }
 
@@ -70,7 +70,7 @@ struct InfoView: View {
         guard parts.count == 2,
               let hour = Int(parts[0]),
               let minute = Int(parts[1]) else { return time }
-        let period = hour >= 12 ? "PM" : "AM"
+        let period = hour >= 12 ? String(localized: "PM") : String(localized: "AM")
         let displayHour = hour == 0 ? 12 : (hour > 12 ? hour - 12 : hour)
         return minute == 0 ? "\(displayHour) \(period)" : "\(displayHour):\(String(format: "%02d", minute)) \(period)"
     }

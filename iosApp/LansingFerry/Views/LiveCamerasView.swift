@@ -29,7 +29,7 @@ struct LiveCamerasView: View {
                     }
                 }
             }
-            .navigationTitle("Live Cameras")
+            .navigationTitle(String(localized: "Live Cameras"))
         }
     }
 }

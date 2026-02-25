@@ -6,34 +6,34 @@ struct ContentView: View {
     var body: some View {
         Group {
             if viewModel.isLoading && viewModel.ferryInfo == nil {
-                ProgressView("Loading ferry info...")
+                ProgressView(String(localized: "Loading ferry info..."))
             } else if let ferryInfo = viewModel.ferryInfo {
                 TabView {
                     HomeView(ferryInfo: ferryInfo) {
                             await viewModel.refresh()
                         }
                         .tabItem {
-                            Label("Home", systemImage: "house")
+                            Label(String(localized: "Home"), systemImage: "house")
                         }
 
                     LiveCamerasView(cameras: ferryInfo.cameras)
                         .tabItem {
-                            Label("Cameras", systemImage: "video")
+                            Label(String(localized: "Cameras"), systemImage: "video")
                         }
 
                     InfoView(ferryInfo: ferryInfo)
                         .tabItem {
-                            Label("Info", systemImage: "info.circle")
+                            Label(String(localized: "Info"), systemImage: "info.circle")
                         }
 
                     FAQView(faqs: ferryInfo.faqs)
                         .tabItem {
-                            Label("FAQ", systemImage: "questionmark.circle")
+                            Label(String(localized: "FAQ"), systemImage: "questionmark.circle")
                         }
                 }
             } else if let error = viewModel.errorMessage {
                 ContentUnavailableView(
-                    "Unable to Load",
+                    String(localized: "Unable to Load"),
                     systemImage: "wifi.slash",
                     description: Text(error)
                 )

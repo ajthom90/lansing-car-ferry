@@ -22,7 +22,7 @@ struct HomeView: View {
             .refreshable {
                 await onRefresh?()
             }
-            .navigationTitle("Lansing Car Ferry")
+            .navigationTitle(String(localized: "Lansing Car Ferry"))
         }
     }
 
@@ -44,7 +44,7 @@ struct HomeView: View {
             HStack(spacing: 8) {
                 Image(systemName: "exclamationmark.triangle.fill")
                     .foregroundStyle(.orange)
-                Text("Check the Facebook page regularly for service updates and schedule changes. No Facebook account is needed to view updates.")
+                Text(String(localized: "Check the Facebook page regularly for service updates and schedule changes. No Facebook account is needed to view updates."))
                     .font(.subheadline)
                     .multilineTextAlignment(.leading)
             }
@@ -77,7 +77,7 @@ struct HomeView: View {
 
     private var locationsSection: some View {
         VStack(alignment: .leading, spacing: 12) {
-            Text("Ferry Locations")
+            Text(String(localized: "Ferry Locations"))
                 .font(.headline)
 
             LocationRow(
@@ -94,17 +94,17 @@ struct HomeView: View {
 
     private var linksSection: some View {
         VStack(alignment: .leading, spacing: 12) {
-            Text("Resources")
+            Text(String(localized: "Resources"))
                 .font(.headline)
 
             Link(destination: URL(string: ferryInfo.links.facebook)!) {
-                Label("Facebook Updates", systemImage: "link")
+                Label(String(localized: "Facebook Updates"), systemImage: "link")
             }
             Link(destination: URL(string: ferryInfo.links.traffic)!) {
-                Label("511 Iowa Traffic", systemImage: "car")
+                Label(String(localized: "511 Iowa Traffic"), systemImage: "car")
             }
             Link(destination: URL(string: ferryInfo.links.iowadot)!) {
-                Label("Iowa DOT Info", systemImage: "globe")
+                Label(String(localized: "Iowa DOT Info"), systemImage: "globe")
             }
         }
         .frame(maxWidth: .infinity, alignment: .leading)
@@ -112,14 +112,14 @@ struct HomeView: View {
 
     private var disclaimerNotice: some View {
         VStack(spacing: 8) {
-            Text("This app is developed by Andrew Thom, an independent developer, and is not affiliated with the States of Iowa or Wisconsin or any government agency. All information is provided on a best-effort basis. Andrew Thom cannot be held liable for any incorrect or outdated information in this application.")
+            Text(String(localized: "This app is developed by Andrew Thom, an independent developer, and is not affiliated with the States of Iowa or Wisconsin or any government agency. All information is provided on a best-effort basis. Andrew Thom cannot be held liable for any incorrect or outdated information in this application."))
                 .font(.caption)
                 .foregroundStyle(.secondary)
                 .multilineTextAlignment(.center)
             HStack(spacing: 16) {
-                Link("Privacy Policy", destination: URL(string: "https://ajthom90.github.io/lansing-car-ferry/privacy-policy.html")!)
+                Link(String(localized: "Privacy Policy"), destination: URL(string: "https://ajthom90.github.io/lansing-car-ferry/privacy-policy.html")!)
                     .font(.caption)
-                Link("Terms of Use", destination: URL(string: "https://ajthom90.github.io/lansing-car-ferry/terms-of-use.html")!)
+                Link(String(localized: "Terms of Use"), destination: URL(string: "https://ajthom90.github.io/lansing-car-ferry/terms-of-use.html")!)
                     .font(.caption)
             }
         }

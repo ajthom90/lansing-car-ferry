@@ -16,7 +16,7 @@ struct FAQView: View {
                         .font(.subheadline)
                 }
             }
-            .navigationTitle("FAQ")
+            .navigationTitle(String(localized: "FAQ"))
         }
     }
 }

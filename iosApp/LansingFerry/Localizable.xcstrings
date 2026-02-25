@@ -3,7 +3,6 @@
   "strings" : {
     "%lld ft" : {
       "comment" : "Feet measurement value (e.g. 11 ft)",
-      "extractionState" : "stale",
       "localizations" : {
         "ar" : {
           "stringUnit" : {
@@ -39,7 +38,6 @@
     },
     "%lld min" : {
       "comment" : "Crossing duration value (e.g. 15 min)",
-      "extractionState" : "stale",
       "localizations" : {
         "ar" : {
           "stringUnit" : {
@@ -75,7 +73,6 @@
     },
     "%lld tons" : {
       "comment" : "Weight in tons value (e.g. 10 tons)",
-      "extractionState" : "stale",
       "localizations" : {
         "ar" : {
           "stringUnit" : {
@@ -111,7 +108,6 @@
     },
     "~%lld vehicles" : {
       "comment" : "Approximate vehicle capacity value",
-      "extractionState" : "stale",
       "localizations" : {
         "ar" : {
           "stringUnit" : {
@@ -145,9 +141,43 @@
         }
       }
     },
+    "AM" : {
+      "comment" : "Morning time period indicator",
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "صباحاً"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "AM"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "AM"
+          }
+        },
+        "so" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "subaxnimo"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "上午"
+          }
+        }
+      }
+    },
     "511 Iowa Traffic" : {
       "comment" : "Traffic info link label",
-      "extractionState" : "stale",
       "localizations" : {
         "ar" : {
           "stringUnit" : {
@@ -183,7 +213,6 @@
     },
     "Allowed" : {
       "comment" : "Allowed vehicles disclosure group header",
-      "extractionState" : "stale",
       "localizations" : {
         "ar" : {
           "stringUnit" : {
@@ -219,7 +248,6 @@
     },
     "An unexpected error occurred." : {
       "comment" : "Generic error message",
-      "extractionState" : "stale",
       "localizations" : {
         "ar" : {
           "stringUnit" : {
@@ -255,7 +283,6 @@
     },
     "Cameras" : {
       "comment" : "Cameras tab label",
-      "extractionState" : "stale",
       "localizations" : {
         "ar" : {
           "stringUnit" : {
@@ -291,7 +318,6 @@
     },
     "Capacity" : {
       "comment" : "Vehicle capacity info card title",
-      "extractionState" : "stale",
       "localizations" : {
         "ar" : {
           "stringUnit" : {
@@ -397,7 +423,6 @@
     },
     "Cost" : {
       "comment" : "Cost info card title",
-      "extractionState" : "stale",
       "localizations" : {
         "ar" : {
           "stringUnit" : {
@@ -433,7 +458,6 @@
     },
     "Crossing" : {
       "comment" : "Crossing time info card title",
-      "extractionState" : "stale",
       "localizations" : {
         "ar" : {
           "stringUnit" : {
@@ -469,7 +493,6 @@
     },
     "Facebook Updates" : {
       "comment" : "Facebook link label",
-      "extractionState" : "stale",
       "localizations" : {
         "ar" : {
           "stringUnit" : {
@@ -505,7 +528,6 @@
     },
     "FAQ" : {
       "comment" : "FAQ tab label and navigation title",
-      "extractionState" : "stale",
       "localizations" : {
         "ar" : {
           "stringUnit" : {
@@ -541,7 +563,6 @@
     },
     "Ferry Info" : {
       "comment" : "Info screen navigation title",
-      "extractionState" : "stale",
       "localizations" : {
         "ar" : {
           "stringUnit" : {
@@ -612,7 +633,6 @@
     },
     "FREE" : {
       "comment" : "Cost value - the ferry is free",
-      "extractionState" : "stale",
       "localizations" : {
         "ar" : {
           "stringUnit" : {
@@ -648,7 +668,6 @@
     },
     "Height" : {
       "comment" : "Vehicle height limit label",
-      "extractionState" : "stale",
       "localizations" : {
         "ar" : {
           "stringUnit" : {
@@ -684,7 +703,6 @@
     },
     "Holiday Hours" : {
       "comment" : "Holiday hours schedule label",
-      "extractionState" : "stale",
       "localizations" : {
         "ar" : {
           "stringUnit" : {
@@ -720,7 +738,6 @@
     },
     "Home" : {
       "comment" : "Home tab label",
-      "extractionState" : "stale",
       "localizations" : {
         "ar" : {
           "stringUnit" : {
@@ -756,7 +773,6 @@
     },
     "Info" : {
       "comment" : "Info tab label",
-      "extractionState" : "stale",
       "localizations" : {
         "ar" : {
           "stringUnit" : {
@@ -792,7 +808,6 @@
     },
     "Iowa" : {
       "comment" : "Iowa ferry landing label",
-      "extractionState" : "stale",
       "localizations" : {
         "ar" : {
           "stringUnit" : {
@@ -828,7 +843,6 @@
     },
     "Iowa DOT Info" : {
       "comment" : "Iowa DOT link label",
-      "extractionState" : "stale",
       "localizations" : {
         "ar" : {
           "stringUnit" : {
@@ -864,7 +878,6 @@
     },
     "Iowa Side" : {
       "comment" : "Iowa departure schedule label",
-      "extractionState" : "stale",
       "localizations" : {
         "ar" : {
           "stringUnit" : {
@@ -900,7 +913,6 @@
     },
     "Lansing Car Ferry" : {
       "comment" : "Home screen navigation title",
-      "extractionState" : "stale",
       "localizations" : {
         "ar" : {
           "stringUnit" : {
@@ -936,7 +948,6 @@
     },
     "Length" : {
       "comment" : "Vehicle length limit label",
-      "extractionState" : "stale",
       "localizations" : {
         "ar" : {
           "stringUnit" : {
@@ -972,7 +983,6 @@
     },
     "Live Cameras" : {
       "comment" : "Live cameras screen navigation title",
-      "extractionState" : "stale",
       "localizations" : {
         "ar" : {
           "stringUnit" : {
@@ -1008,7 +1018,6 @@
     },
     "Loading ferry info..." : {
       "comment" : "Loading state message",
-      "extractionState" : "stale",
       "localizations" : {
         "ar" : {
           "stringUnit" : {
@@ -1044,7 +1053,6 @@
     },
     "Open in Maps" : {
       "comment" : "Button to open ferry location in Maps app",
-      "extractionState" : "stale",
       "localizations" : {
         "ar" : {
           "stringUnit" : {
@@ -1078,9 +1086,43 @@
         }
       }
     },
+    "PM" : {
+      "comment" : "Afternoon/evening time period indicator",
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "مساءً"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "PM"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "PM"
+          }
+        },
+        "so" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "galabnimo"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "下午"
+          }
+        }
+      }
+    },
     "Privacy Policy" : {
       "comment" : "Privacy policy link label",
-      "extractionState" : "stale",
       "localizations" : {
         "ar" : {
           "stringUnit" : {
@@ -1116,7 +1158,6 @@
     },
     "Prohibited" : {
       "comment" : "Prohibited vehicles disclosure group header",
-      "extractionState" : "stale",
       "localizations" : {
         "ar" : {
           "stringUnit" : {
@@ -1187,7 +1228,6 @@
     },
     "Schedule" : {
       "comment" : "Schedule section header",
-      "extractionState" : "stale",
       "localizations" : {
         "ar" : {
           "stringUnit" : {
@@ -1223,7 +1263,6 @@
     },
     "Size Limits" : {
       "comment" : "Size limits section header",
-      "extractionState" : "stale",
       "localizations" : {
         "ar" : {
           "stringUnit" : {
@@ -1259,7 +1298,6 @@
     },
     "Terms of Use" : {
       "comment" : "Terms of use link label",
-      "extractionState" : "stale",
       "localizations" : {
         "ar" : {
           "stringUnit" : {
@@ -1330,7 +1368,6 @@
     },
     "Unable to Load" : {
       "comment" : "Error state title",
-      "extractionState" : "stale",
       "localizations" : {
         "ar" : {
           "stringUnit" : {
@@ -1366,7 +1403,6 @@
     },
     "Vehicles" : {
       "comment" : "Vehicle restrictions section header",
-      "extractionState" : "stale",
       "localizations" : {
         "ar" : {
           "stringUnit" : {
@@ -1402,7 +1438,6 @@
     },
     "Weight" : {
       "comment" : "Vehicle weight limit label",
-      "extractionState" : "stale",
       "localizations" : {
         "ar" : {
           "stringUnit" : {
@@ -1438,7 +1473,6 @@
     },
     "Width" : {
       "comment" : "Vehicle width limit label",
-      "extractionState" : "stale",
       "localizations" : {
         "ar" : {
           "stringUnit" : {
@@ -1474,7 +1508,6 @@
     },
     "Wisconsin" : {
       "comment" : "Wisconsin ferry landing label",
-      "extractionState" : "stale",
       "localizations" : {
         "ar" : {
           "stringUnit" : {
@@ -1510,7 +1543,6 @@
     },
     "Wisconsin Side" : {
       "comment" : "Wisconsin departure schedule label",
-      "extractionState" : "stale",
       "localizations" : {
         "ar" : {
           "stringUnit" : {
