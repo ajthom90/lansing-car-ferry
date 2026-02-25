@@ -16,7 +16,6 @@
 		95C00DBA2AE69C074B8BBB10 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FEBF3364034FD5232667FAF /* ContentView.swift */; };
 		B9C6C347D467113F56AE1737 /* InfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB9A0F17F93F8E5FE77F7D5B /* InfoView.swift */; };
 		BC96AE129145A4CEFA10937E /* LansingFerryApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 276B0D3F779B8A362A5277DB /* LansingFerryApp.swift */; };
-		DED6D3AA7D5522579BF0B7D2 /* icon.svg in Resources */ = {isa = PBXBuildFile; fileRef = C9ACA553534AE4D40E441A94 /* icon.svg */; };
 		E88C44151A8396EB5E466B90 /* LiveCamerasView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A45F3106947302BFD67C47E8 /* LiveCamerasView.swift */; };
 /* End PBXBuildFile section */
 
@@ -32,7 +31,6 @@
 		A1A24A57F7F0680BFB015388 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		A45F3106947302BFD67C47E8 /* LiveCamerasView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveCamerasView.swift; sourceTree = "<group>"; };
 		AB9A0F17F93F8E5FE77F7D5B /* InfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoView.swift; sourceTree = "<group>"; };
-		C9ACA553534AE4D40E441A94 /* icon.svg */ = {isa = PBXFileReference; path = icon.svg; sourceTree = "<group>"; };
 		FC6B5BA327111278E16708A3 /* LansingFerry.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = LansingFerry.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -78,7 +76,6 @@
 			children = (
 				7B9748E5B9D888E06A5C2E99 /* Assets.xcassets */,
 				5FEBF3364034FD5232667FAF /* ContentView.swift */,
-				C9ACA553534AE4D40E441A94 /* icon.svg */,
 				46BF3D4B4BE1C6EA1012D5A5 /* Info.plist */,
 				276B0D3F779B8A362A5277DB /* LansingFerryApp.swift */,
 				E72187B5CAF5A57A78190EEB /* Player */,
@@ -157,7 +154,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				0D3B5119EC79832C57DBE257 /* Assets.xcassets in Resources */,
-				DED6D3AA7D5522579BF0B7D2 /* icon.svg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
