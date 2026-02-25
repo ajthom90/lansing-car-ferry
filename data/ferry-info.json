@@ -25,19 +25,51 @@
     "approximateCapacity": 12,
     "serviceNote": {
       "en": "Continuous, not on a fixed schedule—first-come, first-served",
-      "es": "Servicio continuo, sin horario fijo: por orden de llegada"
+      "es": "Servicio continuo, sin horario fijo: por orden de llegada",
+      "so": "Joogto ah, jadwal go'an ma laha—kan hore yimaado ayaa marka hore la siiyaa",
+      "ar": "خدمة مستمرة بدون جدول زمني محدد — الأولوية لمن يصل أولاً",
+      "fr": "Service continu, sans horaire fixe — premier arrivé, premier servi",
+      "zh": "连续运营，无固定时刻表——先到先服务"
     }
   },
   "locations": {
     "iowa": {
-      "name": { "en": "Lansing Marina", "es": "Marina de Lansing" },
-      "description": { "en": "North driveway off Front Street", "es": "Entrada norte desde Front Street" },
+      "name": {
+        "en": "Lansing Marina",
+        "es": "Marina de Lansing",
+        "so": "Marsada Lansing",
+        "ar": "مرسى لانسينغ",
+        "fr": "Marina de Lansing",
+        "zh": "兰辛码头"
+      },
+      "description": {
+        "en": "North driveway off Front Street",
+        "es": "Entrada norte desde Front Street",
+        "so": "Wadada woqooyi ee ka baxa Front Street",
+        "ar": "الممر الشمالي من شارع فرونت",
+        "fr": "Allée nord depuis Front Street",
+        "zh": "Front Street 北侧入口"
+      },
       "latitude": 43.3695,
       "longitude": -91.2202
     },
     "wisconsin": {
-      "name": { "en": "WIS 82 Landing", "es": "Desembarcadero WIS 82" },
-      "description": { "en": "West of Big Slough Boat Landing", "es": "Al oeste del embarcadero de Big Slough" },
+      "name": {
+        "en": "WIS 82 Landing",
+        "es": "Desembarcadero WIS 82",
+        "so": "Dekeda WIS 82",
+        "ar": "رصيف WIS 82",
+        "fr": "Débarcadère WIS 82",
+        "zh": "WIS 82 渡口"
+      },
+      "description": {
+        "en": "West of Big Slough Boat Landing",
+        "es": "Al oeste del embarcadero de Big Slough",
+        "so": "Galbeedka Big Slough Boat Landing",
+        "ar": "غرب مرسى Big Slough للقوارب",
+        "fr": "À l'ouest du débarcadère de Big Slough",
+        "zh": "Big Slough 船坞以西"
+      },
       "latitude": 43.3667,
       "longitude": -91.2105
     }
@@ -45,106 +77,320 @@
   "cameras": [
     {
       "id": "wi-landing",
-      "name": { "en": "Wisconsin Ferry Landing", "es": "Desembarcadero del ferry en Wisconsin" },
+      "name": {
+        "en": "Wisconsin Ferry Landing",
+        "es": "Desembarcadero del ferry en Wisconsin",
+        "so": "Dekeda Doonida Wisconsin",
+        "ar": "رصيف العبّارة في ويسكونسن",
+        "fr": "Débarcadère du traversier au Wisconsin",
+        "zh": "威斯康星渡口"
+      },
       "streamUrl": "https://iowadotsfs1.us-east-1.skyvdn.com:443/rtplive/d2tv09lb/playlist.m3u8",
       "snapshotUrl": "https://iowadotsnapshot.us-east-1.skyvdn.com/thumbs/d2tv09lb.flv.jpg"
     },
     {
       "id": "ia-landing",
-      "name": { "en": "Iowa Ferry Landing", "es": "Desembarcadero del ferry en Iowa" },
+      "name": {
+        "en": "Iowa Ferry Landing",
+        "es": "Desembarcadero del ferry en Iowa",
+        "so": "Dekeda Doonida Iowa",
+        "ar": "رصيف العبّارة في آيوا",
+        "fr": "Débarcadère du traversier en Iowa",
+        "zh": "爱荷华渡口"
+      },
       "streamUrl": "https://iowadotsfs1.us-east-1.skyvdn.com:443/rtplive/d2tv10lb/playlist.m3u8",
       "snapshotUrl": "https://iowadotsnapshot.us-east-1.skyvdn.com/thumbs/d2tv10lb.flv.jpg"
     },
     {
       "id": "ia-queue",
-      "name": { "en": "Iowa Ferry Queue", "es": "Fila de espera del ferry en Iowa" },
+      "name": {
+        "en": "Iowa Ferry Queue",
+        "es": "Fila de espera del ferry en Iowa",
+        "so": "Safka Sugitaanka Doonida Iowa",
+        "ar": "طابور العبّارة في آيوا",
+        "fr": "File d'attente du traversier en Iowa",
+        "zh": "爱荷华渡轮排队区"
+      },
       "streamUrl": "https://iowadotsfs1.us-east-1.skyvdn.com:443/rtplive/d2tv11lb/playlist.m3u8",
       "snapshotUrl": "https://iowadotsnapshot.us-east-1.skyvdn.com/thumbs/d2tv11lb.flv.jpg"
     }
   ],
   "vehicleRestrictions": {
     "allowed": [
-      { "en": "Cars", "es": "Automóviles" },
-      { "en": "Motorcycles", "es": "Motocicletas" },
-      { "en": "Bicycles", "es": "Bicicletas" },
-      { "en": "Pedestrians", "es": "Peatones" },
-      { "en": "Two-axle trucks under 10 tons", "es": "Camiones de dos ejes de menos de 10 toneladas" }
+      {
+        "en": "Cars",
+        "es": "Automóviles",
+        "so": "Baabuurta",
+        "ar": "سيارات",
+        "fr": "Voitures",
+        "zh": "轿车"
+      },
+      {
+        "en": "Motorcycles",
+        "es": "Motocicletas",
+        "so": "Mootooyaal",
+        "ar": "دراجات نارية",
+        "fr": "Motos",
+        "zh": "摩托车"
+      },
+      {
+        "en": "Bicycles",
+        "es": "Bicicletas",
+        "so": "Baaskiilad",
+        "ar": "دراجات هوائية",
+        "fr": "Vélos",
+        "zh": "自行车"
+      },
+      {
+        "en": "Pedestrians",
+        "es": "Peatones",
+        "so": "Lugeeyayaal",
+        "ar": "مشاة",
+        "fr": "Piétons",
+        "zh": "行人"
+      },
+      {
+        "en": "Two-axle trucks under 10 tons",
+        "es": "Camiones de dos ejes de menos de 10 toneladas",
+        "so": "Gaadiid laba dhagax oo ka yar 10 tan",
+        "ar": "شاحنات بمحورين أقل من 10 أطنان",
+        "fr": "Camions à deux essieux de moins de 10 tonnes",
+        "zh": "10吨以下双轴卡车"
+      }
     ],
     "prohibited": [
-      { "en": "Trailers", "es": "Remolques" },
-      { "en": "ATVs", "es": "Vehículos todo terreno (ATV)" },
-      { "en": "UTVs", "es": "Vehículos utilitarios (UTV)" },
-      { "en": "RVs", "es": "Casas rodantes (RV)" },
-      { "en": "Buses", "es": "Autobuses" },
-      { "en": "Farm equipment", "es": "Equipo agrícola" },
-      { "en": "Hazardous materials", "es": "Materiales peligrosos" }
+      {
+        "en": "Trailers",
+        "es": "Remolques",
+        "so": "Gaadhi-jiid",
+        "ar": "مقطورات",
+        "fr": "Remorques",
+        "zh": "拖车"
+      },
+      {
+        "en": "ATVs",
+        "es": "Vehículos todo terreno (ATV)",
+        "so": "ATV-yaal",
+        "ar": "مركبات رباعية الدفع (ATV)",
+        "fr": "Véhicules tout-terrain (VTT)",
+        "zh": "全地形车 (ATV)"
+      },
+      {
+        "en": "UTVs",
+        "es": "Vehículos utilitarios (UTV)",
+        "so": "UTV-yaal",
+        "ar": "مركبات متعددة الاستخدام (UTV)",
+        "fr": "Véhicules utilitaires (UTV)",
+        "zh": "多功能车 (UTV)"
+      },
+      {
+        "en": "RVs",
+        "es": "Casas rodantes (RV)",
+        "so": "Gaadiid-guri (RV)",
+        "ar": "منازل متنقلة (RV)",
+        "fr": "Camping-cars",
+        "zh": "房车 (RV)"
+      },
+      {
+        "en": "Buses",
+        "es": "Autobuses",
+        "so": "Basas",
+        "ar": "حافلات",
+        "fr": "Autobus",
+        "zh": "巴士"
+      },
+      {
+        "en": "Farm equipment",
+        "es": "Equipo agrícola",
+        "so": "Qalabka beeraha",
+        "ar": "معدات زراعية",
+        "fr": "Équipement agricole",
+        "zh": "农用设备"
+      },
+      {
+        "en": "Hazardous materials",
+        "es": "Materiales peligrosos",
+        "so": "Walxaha halista ah",
+        "ar": "مواد خطرة",
+        "fr": "Matières dangereuses",
+        "zh": "危险物品"
+      }
     ],
     "sizeLimits": {
       "heightFeet": 11,
       "lengthFeet": 25,
-      "widthFeetInches": { "en": "8 ft 6 in", "es": "2,6 m" },
+      "widthFeetInches": {
+        "en": "8 ft 6 in",
+        "es": "2,6 m",
+        "so": "2.6 m",
+        "ar": "٢٫٦ م",
+        "fr": "2,6 m",
+        "zh": "2.6米"
+      },
       "weightTons": 10
     }
   },
   "faqs": [
     {
-      "question": { "en": "How much does the ferry cost?", "es": "¿Cuánto cuesta el ferry?" },
-      "answer": { "en": "The ferry is free of charge.", "es": "El ferry es gratuito." }
+      "question": {
+        "en": "How much does the ferry cost?",
+        "es": "¿Cuánto cuesta el ferry?",
+        "so": "Immisa ayaa doonidu ku kacaysaa?",
+        "ar": "كم تكلفة العبّارة؟",
+        "fr": "Combien coûte le traversier?",
+        "zh": "渡轮费用是多少？"
+      },
+      "answer": {
+        "en": "The ferry is free of charge.",
+        "es": "El ferry es gratuito.",
+        "so": "Doonidu waa bilaash.",
+        "ar": "العبّارة مجانية.",
+        "fr": "Le traversier est gratuit.",
+        "zh": "渡轮免费。"
+      }
     },
     {
-      "question": { "en": "Does the ferry run in winter?", "es": "¿El ferry opera en invierno?" },
+      "question": {
+        "en": "Does the ferry run in winter?",
+        "es": "¿El ferry opera en invierno?",
+        "so": "Doonidu ma shaqeysaa xilliga jiilaalka?",
+        "ar": "هل تعمل العبّارة في الشتاء؟",
+        "fr": "Le traversier fonctionne-t-il en hiver?",
+        "zh": "渡轮冬天运营吗？"
+      },
       "answer": {
         "en": "Yes, as long as the river is navigable. Severe ice conditions may force temporary closures.",
-        "es": "Sí, siempre que el río sea navegable. Condiciones severas de hielo pueden provocar cierres temporales."
+        "es": "Sí, siempre que el río sea navegable. Condiciones severas de hielo pueden provocar cierres temporales.",
+        "so": "Haa, inta uu webigubu mari karo. Barafka aadka ah wuxuu keeni karaa xirmo ku meel gaar ah.",
+        "ar": "نعم، طالما أن النهر صالح للملاحة. قد تؤدي ظروف الجليد الشديدة إلى إغلاق مؤقت.",
+        "fr": "Oui, tant que la rivière est navigable. Des conditions de glace sévères peuvent entraîner des fermetures temporaires.",
+        "zh": "是的，只要河流可以通航。严重的结冰情况可能导致临时停运。"
       }
     },
     {
-      "question": { "en": "How long is the crossing?", "es": "¿Cuánto dura el cruce?" },
+      "question": {
+        "en": "How long is the crossing?",
+        "es": "¿Cuánto dura el cruce?",
+        "so": "Intee in le'eg ayaa gudbinta qaadataa?",
+        "ar": "كم يستغرق العبور؟",
+        "fr": "Combien de temps dure la traversée?",
+        "zh": "渡河需要多长时间？"
+      },
       "answer": {
         "en": "Approximately 15 minutes including loading and unloading.",
-        "es": "Aproximadamente 15 minutos, incluyendo carga y descarga."
+        "es": "Aproximadamente 15 minutos, incluyendo carga y descarga.",
+        "so": "Qiyaastii 15 daqiiqo oo ay ku jiraan rarida iyo soo dejinta.",
+        "ar": "حوالي 15 دقيقة شاملة التحميل والتفريغ.",
+        "fr": "Environ 15 minutes, chargement et déchargement compris.",
+        "zh": "大约15分钟，包括装卸时间。"
       }
     },
     {
-      "question": { "en": "How long is the detour if I can't take the ferry?", "es": "¿Cuánto dura el desvío si no puedo tomar el ferry?" },
+      "question": {
+        "en": "How long is the detour if I can't take the ferry?",
+        "es": "¿Cuánto dura el desvío si no puedo tomar el ferry?",
+        "so": "Intee in le'eg ayay leegyihiin jidka kale haddii aanan doonida qaadi karin?",
+        "ar": "كم يستغرق الطريق البديل إذا لم أتمكن من ركوب العبّارة؟",
+        "fr": "Combien de temps dure le détour si je ne peux pas prendre le traversier?",
+        "zh": "如果无法乘坐渡轮，绕行需要多长时间？"
+      },
       "answer": {
         "en": "The detour route takes approximately 60–70 minutes.",
-        "es": "La ruta alternativa toma aproximadamente 60–70 minutos."
+        "es": "La ruta alternativa toma aproximadamente 60–70 minutos.",
+        "so": "Jidka wareegu wuxuu qaadanayaa qiyaastii 60–70 daqiiqo.",
+        "ar": "يستغرق الطريق البديل حوالي 60–70 دقيقة.",
+        "fr": "Le détour prend environ 60 à 70 minutes.",
+        "zh": "绕行路线大约需要60–70分钟。"
       }
     },
     {
-      "question": { "en": "Is the ferry on a fixed schedule?", "es": "¿El ferry tiene un horario fijo?" },
+      "question": {
+        "en": "Is the ferry on a fixed schedule?",
+        "es": "¿El ferry tiene un horario fijo?",
+        "so": "Doonidu ma leedahay jadwal go'an?",
+        "ar": "هل تعمل العبّارة وفق جدول زمني محدد؟",
+        "fr": "Le traversier suit-il un horaire fixe?",
+        "zh": "渡轮有固定时刻表吗？"
+      },
       "answer": {
         "en": "No, the ferry runs continuously on a first-come, first-served basis.",
-        "es": "No, el ferry opera de forma continua por orden de llegada."
+        "es": "No, el ferry opera de forma continua por orden de llegada.",
+        "so": "Maya, doonidu waxay si joogto ah u shaqeysaa — kan hore yimaado ayaa marka hore la siiyaa.",
+        "ar": "لا، تعمل العبّارة بشكل مستمر بنظام الأولوية لمن يصل أولاً.",
+        "fr": "Non, le traversier fonctionne en continu selon le principe du premier arrivé, premier servi.",
+        "zh": "不，渡轮持续运营，先到先服务。"
       }
     },
     {
-      "question": { "en": "Can I take photos on the ferry?", "es": "¿Puedo tomar fotos en el ferry?" },
+      "question": {
+        "en": "Can I take photos on the ferry?",
+        "es": "¿Puedo tomar fotos en el ferry?",
+        "so": "Miyaan sawiro ka qaadan karaa doonida?",
+        "ar": "هل يمكنني التقاط صور على العبّارة؟",
+        "fr": "Puis-je prendre des photos sur le traversier?",
+        "zh": "可以在渡轮上拍照吗？"
+      },
       "answer": {
         "en": "Yes, photography is allowed, but please don't delay operations.",
-        "es": "Sí, se permite tomar fotos, pero por favor no retrase las operaciones."
+        "es": "Sí, se permite tomar fotos, pero por favor no retrase las operaciones.",
+        "so": "Haa, sawir qaadashadu way banaan tahay, laakiin fadlan ha daahin hawlgallada.",
+        "ar": "نعم، التصوير مسموح به، ولكن يرجى عدم تأخير العمليات.",
+        "fr": "Oui, la photographie est autorisée, mais veuillez ne pas retarder les opérations.",
+        "zh": "可以，允许拍照，但请不要延误运营。"
       }
     },
     {
-      "question": { "en": "What safety equipment is on board?", "es": "¿Qué equipo de seguridad hay a bordo?" },
+      "question": {
+        "en": "What safety equipment is on board?",
+        "es": "¿Qué equipo de seguridad hay a bordo?",
+        "so": "Qalabkee badbaado ayaa saaran doonida?",
+        "ar": "ما هي معدات السلامة المتوفرة على متن العبّارة؟",
+        "fr": "Quel équipement de sécurité y a-t-il à bord?",
+        "zh": "船上有什么安全设备？"
+      },
       "answer": {
         "en": "Life preservers are available. Follow crew instructions at all times.",
-        "es": "Hay chalecos salvavidas disponibles. Siga las instrucciones de la tripulación en todo momento."
+        "es": "Hay chalecos salvavidas disponibles. Siga las instrucciones de la tripulación en todo momento.",
+        "so": "Jaakadaha badbaadada waa la heli karaa. Raac tilmaamaha shaqaalaha mar walba.",
+        "ar": "سترات النجاة متوفرة. اتبع تعليمات الطاقم في جميع الأوقات.",
+        "fr": "Des gilets de sauvetage sont disponibles. Suivez les instructions de l'équipage en tout temps.",
+        "zh": "船上备有救生衣。请随时遵从船员指示。"
       }
     },
     {
-      "question": { "en": "Are there commuter priority hours?", "es": "¿Hay horarios de prioridad para viajeros frecuentes?" },
+      "question": {
+        "en": "Are there commuter priority hours?",
+        "es": "¿Hay horarios de prioridad para viajeros frecuentes?",
+        "so": "Ma jiraan saacadaha mudnaanta shaqo-tagayaasha?",
+        "ar": "هل توجد ساعات أولوية للمسافرين المنتظمين؟",
+        "fr": "Y a-t-il des heures de priorité pour les navetteurs?",
+        "zh": "有通勤优先时段吗？"
+      },
       "answer": {
         "en": "Yes, from 5:30–7:30 AM and 3:30–5:30 PM, the ferry favors commuters.",
-        "es": "Sí, de 5:30–7:30 AM y 3:30–5:30 PM, el ferry da prioridad a los viajeros frecuentes."
+        "es": "Sí, de 5:30–7:30 AM y 3:30–5:30 PM, el ferry da prioridad a los viajeros frecuentes.",
+        "so": "Haa, 5:30–7:30 subaxnimo iyo 3:30–5:30 galabnimo, doonidu waxay mudnaanta siisaa shaqo-tagayaasha.",
+        "ar": "نعم، من الساعة 5:30–7:30 صباحاً و3:30–5:30 مساءً، تُعطى الأولوية للمسافرين المنتظمين.",
+        "fr": "Oui, de 5 h 30 à 7 h 30 et de 15 h 30 à 17 h 30, le traversier donne la priorité aux navetteurs.",
+        "zh": "是的，早上5:30–7:30和下午3:30–5:30，渡轮优先服务通勤者。"
       }
     },
     {
-      "question": { "en": "What are the vehicle size limits?", "es": "¿Cuáles son los límites de tamaño de los vehículos?" },
+      "question": {
+        "en": "What are the vehicle size limits?",
+        "es": "¿Cuáles son los límites de tamaño de los vehículos?",
+        "so": "Maxay yihiin xadka cabbirka gaadiidka?",
+        "ar": "ما هي حدود حجم المركبات؟",
+        "fr": "Quelles sont les limites de taille des véhicules?",
+        "zh": "车辆尺寸限制是什么？"
+      },
       "answer": {
         "en": "Maximum 11 ft height, 25 ft length, 8 ft 6 in width, and 10 tons weight.",
-        "es": "Máximo 3,4 m de alto, 7,6 m de largo, 2,6 m de ancho y 10 toneladas de peso."
+        "es": "Máximo 3,4 m de alto, 7,6 m de largo, 2,6 m de ancho y 10 toneladas de peso.",
+        "so": "Ugu badnaan 3.4 m dherer, 7.6 m dher, 2.6 m balac, iyo 10 tan miisaan.",
+        "ar": "الحد الأقصى: ٣٫٤ م ارتفاع، ٧٫٦ م طول، ٢٫٦ م عرض، و١٠ أطنان وزن.",
+        "fr": "Maximum 3,4 m de hauteur, 7,6 m de longueur, 2,6 m de largeur et 10 tonnes de poids.",
+        "zh": "最大高度3.4米，长度7.6米，宽度2.6米，重量10吨。"
       }
     }
   ],
