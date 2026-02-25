@@ -37,6 +37,7 @@ class MainActivity : ComponentActivity() {
                         uiState.ferryInfo != null -> {
                             FerryNavigation(
                                 ferryInfo = uiState.ferryInfo!!,
+                                isRefreshing = uiState.isLoading,
                                 onRefresh = { viewModel.refresh() },
                             )
                         }

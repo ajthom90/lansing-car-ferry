@@ -111,24 +111,44 @@ fun HomeScreen(
 
                 LocationRow(label = "Iowa", location = ferryInfo.locations.iowa) {
                     val uri = Uri.parse("geo:${ferryInfo.locations.iowa.latitude},${ferryInfo.locations.iowa.longitude}?q=${ferryInfo.locations.iowa.latitude},${ferryInfo.locations.iowa.longitude}(${Uri.encode(ferryInfo.locations.iowa.name)})")
-                    context.startActivity(Intent(Intent.ACTION_VIEW, uri))
+                    try {
+                        context.startActivity(Intent(Intent.ACTION_VIEW, uri))
+                    } catch (_: android.content.ActivityNotFoundException) {
+                        // No app available to handle the intent
+                    }
                 }
                 LocationRow(label = "Wisconsin", location = ferryInfo.locations.wisconsin) {
                     val uri = Uri.parse("geo:${ferryInfo.locations.wisconsin.latitude},${ferryInfo.locations.wisconsin.longitude}?q=${ferryInfo.locations.wisconsin.latitude},${ferryInfo.locations.wisconsin.longitude}(${Uri.encode(ferryInfo.locations.wisconsin.name)})")
-                    context.startActivity(Intent(Intent.ACTION_VIEW, uri))
+                    try {
+                        context.startActivity(Intent(Intent.ACTION_VIEW, uri))
+                    } catch (_: android.content.ActivityNotFoundException) {
+                        // No app available to handle the intent
+                    }
                 }
 
                 // Links
                 Text("Resources", style = MaterialTheme.typography.titleMedium)
 
                 LinkRow(icon = Icons.Default.Link, label = "Facebook Updates") {
-                    context.startActivity(Intent(Intent.ACTION_VIEW, Uri.parse(ferryInfo.links.facebook)))
+                    try {
+                        context.startActivity(Intent(Intent.ACTION_VIEW, Uri.parse(ferryInfo.links.facebook)))
+                    } catch (_: android.content.ActivityNotFoundException) {
+                        // No app available to handle the intent
+                    }
                 }
                 LinkRow(icon = Icons.Default.Traffic, label = "511 Iowa Traffic") {
-                    context.startActivity(Intent(Intent.ACTION_VIEW, Uri.parse(ferryInfo.links.traffic)))
+                    try {
+                        context.startActivity(Intent(Intent.ACTION_VIEW, Uri.parse(ferryInfo.links.traffic)))
+                    } catch (_: android.content.ActivityNotFoundException) {
+                        // No app available to handle the intent
+                    }
                 }
                 LinkRow(icon = Icons.Default.Language, label = "Iowa DOT Info") {
-                    context.startActivity(Intent(Intent.ACTION_VIEW, Uri.parse(ferryInfo.links.iowadot)))
+                    try {
+                        context.startActivity(Intent(Intent.ACTION_VIEW, Uri.parse(ferryInfo.links.iowadot)))
+                    } catch (_: android.content.ActivityNotFoundException) {
+                        // No app available to handle the intent
+                    }
                 }
             }
         }

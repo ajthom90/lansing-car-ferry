@@ -52,6 +52,7 @@ val topLevelRoutes = listOf(
 @Composable
 fun FerryNavigation(
     ferryInfo: FerryInfo,
+    isRefreshing: Boolean,
     onRefresh: () -> Unit,
 ) {
     val navController = rememberNavController()
@@ -91,7 +92,7 @@ fun FerryNavigation(
             composable<HomeRoute> {
                 HomeScreen(
                     ferryInfo = ferryInfo,
-                    isRefreshing = false,
+                    isRefreshing = isRefreshing,
                     onRefresh = onRefresh,
                 )
             }
