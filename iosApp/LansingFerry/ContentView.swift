@@ -24,7 +24,7 @@ struct ContentView: View {
                             Label("Info", systemImage: "info.circle")
                         }
 
-                    Text("FAQ")
+                    FAQView(faqs: ferryInfo.faqs)
                         .tabItem {
                             Label("FAQ", systemImage: "questionmark.circle")
                         }
