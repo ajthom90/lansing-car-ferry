@@ -23,18 +23,21 @@
     ],
     "crossingDurationMinutes": 15,
     "approximateCapacity": 12,
-    "serviceNote": { "en": "Continuous, not on a fixed schedule—first-come, first-served" }
+    "serviceNote": {
+      "en": "Continuous, not on a fixed schedule—first-come, first-served",
+      "es": "Servicio continuo, sin horario fijo: por orden de llegada"
+    }
   },
   "locations": {
     "iowa": {
-      "name": { "en": "Lansing Marina" },
-      "description": { "en": "North driveway off Front Street" },
+      "name": { "en": "Lansing Marina", "es": "Marina de Lansing" },
+      "description": { "en": "North driveway off Front Street", "es": "Entrada norte desde Front Street" },
       "latitude": 43.3695,
       "longitude": -91.2202
     },
     "wisconsin": {
-      "name": { "en": "WIS 82 Landing" },
-      "description": { "en": "West of Big Slough Boat Landing" },
+      "name": { "en": "WIS 82 Landing", "es": "Desembarcadero WIS 82" },
+      "description": { "en": "West of Big Slough Boat Landing", "es": "Al oeste del embarcadero de Big Slough" },
       "latitude": 43.3667,
       "longitude": -91.2105
     }
@@ -42,83 +45,107 @@
   "cameras": [
     {
       "id": "wi-landing",
-      "name": { "en": "Wisconsin Ferry Landing" },
+      "name": { "en": "Wisconsin Ferry Landing", "es": "Desembarcadero del ferry en Wisconsin" },
       "streamUrl": "https://iowadotsfs1.us-east-1.skyvdn.com:443/rtplive/d2tv09lb/playlist.m3u8",
       "snapshotUrl": "https://iowadotsnapshot.us-east-1.skyvdn.com/thumbs/d2tv09lb.flv.jpg"
     },
     {
       "id": "ia-landing",
-      "name": { "en": "Iowa Ferry Landing" },
+      "name": { "en": "Iowa Ferry Landing", "es": "Desembarcadero del ferry en Iowa" },
       "streamUrl": "https://iowadotsfs1.us-east-1.skyvdn.com:443/rtplive/d2tv10lb/playlist.m3u8",
       "snapshotUrl": "https://iowadotsnapshot.us-east-1.skyvdn.com/thumbs/d2tv10lb.flv.jpg"
     },
     {
       "id": "ia-queue",
-      "name": { "en": "Iowa Ferry Queue" },
+      "name": { "en": "Iowa Ferry Queue", "es": "Fila de espera del ferry en Iowa" },
       "streamUrl": "https://iowadotsfs1.us-east-1.skyvdn.com:443/rtplive/d2tv11lb/playlist.m3u8",
       "snapshotUrl": "https://iowadotsnapshot.us-east-1.skyvdn.com/thumbs/d2tv11lb.flv.jpg"
     }
   ],
   "vehicleRestrictions": {
     "allowed": [
-      { "en": "Cars" },
-      { "en": "Motorcycles" },
-      { "en": "Bicycles" },
-      { "en": "Pedestrians" },
-      { "en": "Two-axle trucks under 10 tons" }
+      { "en": "Cars", "es": "Automóviles" },
+      { "en": "Motorcycles", "es": "Motocicletas" },
+      { "en": "Bicycles", "es": "Bicicletas" },
+      { "en": "Pedestrians", "es": "Peatones" },
+      { "en": "Two-axle trucks under 10 tons", "es": "Camiones de dos ejes de menos de 10 toneladas" }
     ],
     "prohibited": [
-      { "en": "Trailers" },
-      { "en": "ATVs" },
-      { "en": "UTVs" },
-      { "en": "RVs" },
-      { "en": "Buses" },
-      { "en": "Farm equipment" },
-      { "en": "Hazardous materials" }
+      { "en": "Trailers", "es": "Remolques" },
+      { "en": "ATVs", "es": "Vehículos todo terreno (ATV)" },
+      { "en": "UTVs", "es": "Vehículos utilitarios (UTV)" },
+      { "en": "RVs", "es": "Casas rodantes (RV)" },
+      { "en": "Buses", "es": "Autobuses" },
+      { "en": "Farm equipment", "es": "Equipo agrícola" },
+      { "en": "Hazardous materials", "es": "Materiales peligrosos" }
     ],
     "sizeLimits": {
       "heightFeet": 11,
       "lengthFeet": 25,
-      "widthFeetInches": { "en": "8 ft 6 in" },
+      "widthFeetInches": { "en": "8 ft 6 in", "es": "2,6 m" },
       "weightTons": 10
     }
   },
   "faqs": [
     {
-      "question": { "en": "How much does the ferry cost?" },
-      "answer": { "en": "The ferry is free of charge." }
+      "question": { "en": "How much does the ferry cost?", "es": "¿Cuánto cuesta el ferry?" },
+      "answer": { "en": "The ferry is free of charge.", "es": "El ferry es gratuito." }
     },
     {
-      "question": { "en": "Does the ferry run in winter?" },
-      "answer": { "en": "Yes, as long as the river is navigable. Severe ice conditions may force temporary closures." }
+      "question": { "en": "Does the ferry run in winter?", "es": "¿El ferry opera en invierno?" },
+      "answer": {
+        "en": "Yes, as long as the river is navigable. Severe ice conditions may force temporary closures.",
+        "es": "Sí, siempre que el río sea navegable. Condiciones severas de hielo pueden provocar cierres temporales."
+      }
     },
     {
-      "question": { "en": "How long is the crossing?" },
-      "answer": { "en": "Approximately 15 minutes including loading and unloading." }
+      "question": { "en": "How long is the crossing?", "es": "¿Cuánto dura el cruce?" },
+      "answer": {
+        "en": "Approximately 15 minutes including loading and unloading.",
+        "es": "Aproximadamente 15 minutos, incluyendo carga y descarga."
+      }
     },
     {
-      "question": { "en": "How long is the detour if I can't take the ferry?" },
-      "answer": { "en": "The detour route takes approximately 60–70 minutes." }
+      "question": { "en": "How long is the detour if I can't take the ferry?", "es": "¿Cuánto dura el desvío si no puedo tomar el ferry?" },
+      "answer": {
+        "en": "The detour route takes approximately 60–70 minutes.",
+        "es": "La ruta alternativa toma aproximadamente 60–70 minutos."
+      }
     },
     {
-      "question": { "en": "Is the ferry on a fixed schedule?" },
-      "answer": { "en": "No, the ferry runs continuously on a first-come, first-served basis." }
+      "question": { "en": "Is the ferry on a fixed schedule?", "es": "¿El ferry tiene un horario fijo?" },
+      "answer": {
+        "en": "No, the ferry runs continuously on a first-come, first-served basis.",
+        "es": "No, el ferry opera de forma continua por orden de llegada."
+      }
     },
     {
-      "question": { "en": "Can I take photos on the ferry?" },
-      "answer": { "en": "Yes, photography is allowed, but please don't delay operations." }
+      "question": { "en": "Can I take photos on the ferry?", "es": "¿Puedo tomar fotos en el ferry?" },
+      "answer": {
+        "en": "Yes, photography is allowed, but please don't delay operations.",
+        "es": "Sí, se permite tomar fotos, pero por favor no retrase las operaciones."
+      }
     },
     {
-      "question": { "en": "What safety equipment is on board?" },
-      "answer": { "en": "Life preservers are available. Follow crew instructions at all times." }
+      "question": { "en": "What safety equipment is on board?", "es": "¿Qué equipo de seguridad hay a bordo?" },
+      "answer": {
+        "en": "Life preservers are available. Follow crew instructions at all times.",
+        "es": "Hay chalecos salvavidas disponibles. Siga las instrucciones de la tripulación en todo momento."
+      }
     },
     {
-      "question": { "en": "Are there commuter priority hours?" },
-      "answer": { "en": "Yes, from 5:30–7:30 AM and 3:30–5:30 PM, the ferry favors commuters." }
+      "question": { "en": "Are there commuter priority hours?", "es": "¿Hay horarios de prioridad para viajeros frecuentes?" },
+      "answer": {
+        "en": "Yes, from 5:30–7:30 AM and 3:30–5:30 PM, the ferry favors commuters.",
+        "es": "Sí, de 5:30–7:30 AM y 3:30–5:30 PM, el ferry da prioridad a los viajeros frecuentes."
+      }
     },
     {
-      "question": { "en": "What are the vehicle size limits?" },
-      "answer": { "en": "Maximum 11 ft height, 25 ft length, 8 ft 6 in width, and 10 tons weight." }
+      "question": { "en": "What are the vehicle size limits?", "es": "¿Cuáles son los límites de tamaño de los vehículos?" },
+      "answer": {
+        "en": "Maximum 11 ft height, 25 ft length, 8 ft 6 in width, and 10 tons weight.",
+        "es": "Máximo 3,4 m de alto, 7,6 m de largo, 2,6 m de ancho y 10 toneladas de peso."
+      }
     }
   ],
   "contact": {
