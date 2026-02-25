@@ -32,6 +32,7 @@ kotlin {
             implementation(libs.ktor.serialization.kotlinx.json)
             implementation(libs.kotlinx.serialization.json)
             implementation(libs.okio)
+            implementation(libs.kotlinx.datetime)
         }
 
         androidMain.dependencies {
