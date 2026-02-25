@@ -7,11 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7BFFC821F57F1ADB96C67A52 /* FerryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 016223D069D991502877E1A1 /* FerryViewModel.swift */; };
 		95C00DBA2AE69C074B8BBB10 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FEBF3364034FD5232667FAF /* ContentView.swift */; };
 		BC96AE129145A4CEFA10937E /* LansingFerryApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 276B0D3F779B8A362A5277DB /* LansingFerryApp.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		016223D069D991502877E1A1 /* FerryViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FerryViewModel.swift; sourceTree = "<group>"; };
 		276B0D3F779B8A362A5277DB /* LansingFerryApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LansingFerryApp.swift; sourceTree = "<group>"; };
 		46BF3D4B4BE1C6EA1012D5A5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		5FEBF3364034FD5232667FAF /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -41,8 +43,17 @@
 				5FEBF3364034FD5232667FAF /* ContentView.swift */,
 				46BF3D4B4BE1C6EA1012D5A5 /* Info.plist */,
 				276B0D3F779B8A362A5277DB /* LansingFerryApp.swift */,
+				EC86B64BE984A51770E4C5C2 /* ViewModels */,
 			);
 			path = LansingFerry;
+			sourceTree = "<group>";
+		};
+		EC86B64BE984A51770E4C5C2 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				016223D069D991502877E1A1 /* FerryViewModel.swift */,
+			);
+			path = ViewModels;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -127,6 +138,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				95C00DBA2AE69C074B8BBB10 /* ContentView.swift in Sources */,
+				7BFFC821F57F1ADB96C67A52 /* FerryViewModel.swift in Sources */,
 				BC96AE129145A4CEFA10937E /* LansingFerryApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

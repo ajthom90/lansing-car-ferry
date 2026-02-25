@@ -65,6 +65,8 @@ class FerryRepository(
 
     companion object {
         private const val CACHE_TTL_MINUTES = 30
+
+        fun create(): FerryRepository = FerryRepository()
     }
 }
 
