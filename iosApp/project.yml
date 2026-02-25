@@ -1,0 +1,36 @@
+name: LansingFerry
+options:
+  bundleIdPrefix: com.lansingferry
+  deploymentTarget:
+    iOS: "17.0"
+  xcodeVersion: "16.0"
+  createIntermediateGroups: true
+settings:
+  base:
+    DEVELOPMENT_TEAM: ""
+targets:
+  LansingFerry:
+    type: application
+    platform: iOS
+    sources:
+      - path: LansingFerry
+    settings:
+      base:
+        INFOPLIST_FILE: LansingFerry/Info.plist
+        PRODUCT_BUNDLE_IDENTIFIER: com.lansingferry.ios
+        FRAMEWORK_SEARCH_PATHS:
+          - "$(SRCROOT)/../shared/build/bin/iosSimulatorArm64/debugFramework"
+          - "$(SRCROOT)/../shared/build/bin/iosArm64/releaseFramework"
+        OTHER_LDFLAGS: ["-ObjC"]
+        SWIFT_VERSION: "5.0"
+    dependencies: []
+    preBuildScripts:
+      - name: "Build KMP Shared Framework"
+        script: |
+          cd "$SRCROOT/.."
+          if [ "$PLATFORM_NAME" = "iphonesimulator" ]; then
+            ./gradlew :shared:linkDebugFrameworkIosSimulatorArm64
+          else
+            ./gradlew :shared:linkReleaseFrameworkIosArm64
+          fi
+        basedOnDependencyAnalysis: false
