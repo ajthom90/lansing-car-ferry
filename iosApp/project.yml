@@ -7,7 +7,7 @@ options:
   createIntermediateGroups: true
 settings:
   base:
-    DEVELOPMENT_TEAM: ""
+    DEVELOPMENT_TEAM: LL334G7KP2
 targets:
   LansingFerry:
     type: application
@@ -18,11 +18,12 @@ targets:
       base:
         INFOPLIST_FILE: LansingFerry/Info.plist
         PRODUCT_BUNDLE_IDENTIFIER: com.lansingferry.ios
-        FRAMEWORK_SEARCH_PATHS:
-          - "$(SRCROOT)/../shared/build/bin/iosSimulatorArm64/debugFramework"
-          - "$(SRCROOT)/../shared/build/bin/iosArm64/releaseFramework"
         OTHER_LDFLAGS: ["-ObjC"]
         SWIFT_VERSION: "5.0"
+        FRAMEWORK_SEARCH_PATHS[sdk=iphonesimulator*]:
+          - "$(SRCROOT)/../shared/build/bin/iosSimulatorArm64/debugFramework"
+        FRAMEWORK_SEARCH_PATHS[sdk=iphoneos*]:
+          - "$(SRCROOT)/../shared/build/bin/iosArm64/releaseFramework"
     dependencies: []
     preBuildScripts:
       - name: "Build KMP Shared Framework"

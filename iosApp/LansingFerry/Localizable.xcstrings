@@ -1,325 +1,59 @@
 {
   "sourceLanguage" : "en",
   "strings" : {
-    "Lansing Car Ferry" : {
-      "comment" : "Home screen navigation title",
+    "%lld ft" : {
+      "comment" : "Feet measurement value (e.g. 11 ft)",
+      "extractionState" : "stale",
       "localizations" : {
-        "es" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Ferry de Lansing"
-          }
-        },
-        "so" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Doonida Baabuurta Lansing"
-          }
-        },
         "ar" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "عبّارة لانسينغ للسيارات"
+            "value" : "%lld قدم"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%lld pies"
           }
         },
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Traversier de Lansing"
-          }
-        },
-        "zh-Hans" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "兰辛汽车渡轮"
-          }
-        }
-      }
-    },
-    "Loading ferry info..." : {
-      "comment" : "Loading state message",
-      "localizations" : {
-        "es" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Cargando información del ferry..."
+            "value" : "%lld pieds"
           }
         },
         "so" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Waa la soo dejinayaa macluumaadka doonida..."
-          }
-        },
-        "ar" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "جاري تحميل معلومات العبّارة..."
-          }
-        },
-        "fr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Chargement des informations du traversier..."
+            "value" : "%lld fiit"
           }
         },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "正在加载渡轮信息..."
-          }
-        }
-      }
-    },
-    "Home" : {
-      "comment" : "Home tab label",
-      "localizations" : {
-        "es" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Inicio"
-          }
-        },
-        "so" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Bogga hore"
-          }
-        },
-        "ar" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "الرئيسية"
-          }
-        },
-        "fr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Accueil"
-          }
-        },
-        "zh-Hans" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "首页"
-          }
-        }
-      }
-    },
-    "Cameras" : {
-      "comment" : "Cameras tab label",
-      "localizations" : {
-        "es" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Cámaras"
-          }
-        },
-        "so" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Kamaradaha"
-          }
-        },
-        "ar" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "الكاميرات"
-          }
-        },
-        "fr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Caméras"
-          }
-        },
-        "zh-Hans" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "摄像头"
-          }
-        }
-      }
-    },
-    "Info" : {
-      "comment" : "Info tab label",
-      "localizations" : {
-        "es" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Info"
-          }
-        },
-        "so" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Macluumaad"
-          }
-        },
-        "ar" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "معلومات"
-          }
-        },
-        "fr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Info"
-          }
-        },
-        "zh-Hans" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "信息"
-          }
-        }
-      }
-    },
-    "FAQ" : {
-      "comment" : "FAQ tab label and navigation title",
-      "localizations" : {
-        "es" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Preguntas"
-          }
-        },
-        "so" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Su'aalaha"
-          }
-        },
-        "ar" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "الأسئلة"
-          }
-        },
-        "fr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "FAQ"
-          }
-        },
-        "zh-Hans" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "常见问题"
-          }
-        }
-      }
-    },
-    "Unable to Load" : {
-      "comment" : "Error state title",
-      "localizations" : {
-        "es" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "No se pudo cargar"
-          }
-        },
-        "so" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Lama soo dejin karo"
-          }
-        },
-        "ar" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "تعذر التحميل"
-          }
-        },
-        "fr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Impossible de charger"
-          }
-        },
-        "zh-Hans" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "无法加载"
-          }
-        }
-      }
-    },
-    "Check the Facebook page regularly for service updates and schedule changes. No Facebook account is needed to view updates." : {
-      "comment" : "Facebook notice banner on home screen",
-      "localizations" : {
-        "es" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Consulte la página de Facebook regularmente para actualizaciones del servicio y cambios de horario. No se necesita una cuenta de Facebook para ver las actualizaciones."
-          }
-        },
-        "so" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Si joogto ah fiiri bogga Facebook ee cusbooneysiyaha adeegga iyo isbeddelka jadwalka. Looma baahna akoon Facebook si aad u aragto cusbooneysiyaha."
-          }
-        },
-        "ar" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "تحقق من صفحة فيسبوك بانتظام للحصول على تحديثات الخدمة وتغييرات الجدول الزمني. لا تحتاج إلى حساب فيسبوك لعرض التحديثات."
-          }
-        },
-        "fr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Consultez régulièrement la page Facebook pour les mises à jour du service et les changements d'horaire. Aucun compte Facebook n'est nécessaire pour voir les mises à jour."
-          }
-        },
-        "zh-Hans" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "请定期查看Facebook页面获取服务更新和时刻表变更。无需Facebook账号即可查看更新。"
-          }
-        }
-      }
-    },
-    "Crossing" : {
-      "comment" : "Crossing time info card title",
-      "localizations" : {
-        "es" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Cruce"
-          }
-        },
-        "so" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Gudbinta"
-          }
-        },
-        "ar" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "العبور"
-          }
-        },
-        "fr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Traversée"
-          }
-        },
-        "zh-Hans" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "渡河"
+            "value" : "%lld英尺"
           }
         }
       }
     },
     "%lld min" : {
       "comment" : "Crossing duration value (e.g. 15 min)",
+      "extractionState" : "stale",
       "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%lld دقيقة"
+          }
+        },
         "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%lld min"
+          }
+        },
+        "fr" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "%lld min"
@@ -331,18 +65,6 @@
             "value" : "%lld daqiiqo"
           }
         },
-        "ar" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "%lld دقيقة"
-          }
-        },
-        "fr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "%lld min"
-          }
-        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -351,66 +73,68 @@
         }
       }
     },
-    "Capacity" : {
-      "comment" : "Vehicle capacity info card title",
+    "%lld tons" : {
+      "comment" : "Weight in tons value (e.g. 10 tons)",
+      "extractionState" : "stale",
       "localizations" : {
-        "es" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Capacidad"
-          }
-        },
-        "so" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Awoodda"
-          }
-        },
         "ar" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "السعة"
+            "value" : "%lld طن"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%lld toneladas"
           }
         },
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Capacité"
+            "value" : "%lld tonnes"
+          }
+        },
+        "so" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%lld tan"
           }
         },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "容量"
+            "value" : "%lld吨"
           }
         }
       }
     },
     "~%lld vehicles" : {
       "comment" : "Approximate vehicle capacity value",
+      "extractionState" : "stale",
       "localizations" : {
-        "es" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "~%lld vehículos"
-          }
-        },
-        "so" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "~%lld gaadhi"
-          }
-        },
         "ar" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "~%lld مركبة"
           }
         },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "~%lld vehículos"
+          }
+        },
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "~%lld véhicules"
+          }
+        },
+        "so" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "~%lld gaadhi"
           }
         },
         "zh-Hans" : {
@@ -421,31 +145,282 @@
         }
       }
     },
-    "Cost" : {
-      "comment" : "Cost info card title",
+    "511 Iowa Traffic" : {
+      "comment" : "Traffic info link label",
+      "extractionState" : "stale",
       "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "حركة المرور 511 آيوا"
+          }
+        },
         "es" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Costo"
+            "value" : "Tráfico 511 Iowa"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Trafic 511 Iowa"
           }
         },
         "so" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Qiimaha"
+            "value" : "Taraafikada 511 Iowa"
           }
         },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "511爱荷华交通"
+          }
+        }
+      }
+    },
+    "Allowed" : {
+      "comment" : "Allowed vehicles disclosure group header",
+      "extractionState" : "stale",
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "مسموح"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Permitidos"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Autorisés"
+          }
+        },
+        "so" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "La ogol yahay"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "允许"
+          }
+        }
+      }
+    },
+    "An unexpected error occurred." : {
+      "comment" : "Generic error message",
+      "extractionState" : "stale",
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "حدث خطأ غير متوقع."
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ocurrió un error inesperado."
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Une erreur inattendue s'est produite."
+          }
+        },
+        "so" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Khalad aan la filayn ayaa dhacay."
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "发生了意外错误。"
+          }
+        }
+      }
+    },
+    "Cameras" : {
+      "comment" : "Cameras tab label",
+      "extractionState" : "stale",
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "الكاميرات"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Cámaras"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Caméras"
+          }
+        },
+        "so" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kamaradaha"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "摄像头"
+          }
+        }
+      }
+    },
+    "Capacity" : {
+      "comment" : "Vehicle capacity info card title",
+      "extractionState" : "stale",
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "السعة"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Capacidad"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Capacité"
+          }
+        },
+        "so" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Awoodda"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "容量"
+          }
+        }
+      }
+    },
+    "Check the Facebook page regularly for service updates and schedule changes. No Facebook account is needed to view updates." : {
+      "comment" : "Facebook notice banner on home screen",
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "تحقق من صفحة فيسبوك بانتظام للحصول على تحديثات الخدمة وتغييرات الجدول الزمني. لا تحتاج إلى حساب فيسبوك لعرض التحديثات."
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Consulte la página de Facebook regularmente para actualizaciones del servicio y cambios de horario. No se necesita una cuenta de Facebook para ver las actualizaciones."
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Consultez régulièrement la page Facebook pour les mises à jour du service et les changements d'horaire. Aucun compte Facebook n'est nécessaire pour voir les mises à jour."
+          }
+        },
+        "so" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Si joogto ah fiiri bogga Facebook ee cusbooneysiyaha adeegga iyo isbeddelka jadwalka. Looma baahna akoon Facebook si aad u aragto cusbooneysiyaha."
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "请定期查看Facebook页面获取服务更新和时刻表变更。无需Facebook账号即可查看更新。"
+          }
+        }
+      }
+    },
+    "Commuter Priority" : {
+      "comment" : "Commuter priority windows label",
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "أولوية المسافرين"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Prioridad para viajeros"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Priorité aux navetteurs"
+          }
+        },
+        "so" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mudnaanta shaqo-tagayaasha"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "通勤优先"
+          }
+        }
+      }
+    },
+    "Cost" : {
+      "comment" : "Cost info card title",
+      "extractionState" : "stale",
+      "localizations" : {
         "ar" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "التكلفة"
           }
         },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Costo"
+          }
+        },
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Coût"
+          }
+        },
+        "so" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Qiimaha"
           }
         },
         "zh-Hans" : {
@@ -456,37 +431,146 @@
         }
       }
     },
-    "FREE" : {
-      "comment" : "Cost value - the ferry is free",
+    "Crossing" : {
+      "comment" : "Crossing time info card title",
+      "extractionState" : "stale",
       "localizations" : {
-        "es" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "GRATIS"
-          }
-        },
-        "so" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "BILAASH"
-          }
-        },
         "ar" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "مجاني"
+            "value" : "العبور"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Cruce"
           }
         },
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "GRATUIT"
+            "value" : "Traversée"
+          }
+        },
+        "so" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Gudbinta"
           }
         },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "免费"
+            "value" : "渡河"
+          }
+        }
+      }
+    },
+    "Facebook Updates" : {
+      "comment" : "Facebook link label",
+      "extractionState" : "stale",
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "تحديثات فيسبوك"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Actualizaciones de Facebook"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mises à jour Facebook"
+          }
+        },
+        "so" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Cusbooneysiyaha Facebook"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Facebook更新"
+          }
+        }
+      }
+    },
+    "FAQ" : {
+      "comment" : "FAQ tab label and navigation title",
+      "extractionState" : "stale",
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "الأسئلة"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Preguntas"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "FAQ"
+          }
+        },
+        "so" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Su'aalaha"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "常见问题"
+          }
+        }
+      }
+    },
+    "Ferry Info" : {
+      "comment" : "Info screen navigation title",
+      "extractionState" : "stale",
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "معلومات العبّارة"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Info del ferry"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Info du traversier"
+          }
+        },
+        "so" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Macluumaadka doonida"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "渡轮信息"
           }
         }
       }
@@ -494,28 +578,28 @@
     "Ferry Locations" : {
       "comment" : "Locations section header on home screen",
       "localizations" : {
-        "es" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Ubicaciones del ferry"
-          }
-        },
-        "so" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Goobaha doonida"
-          }
-        },
         "ar" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "مواقع العبّارة"
           }
         },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ubicaciones del ferry"
+          }
+        },
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Emplacements du traversier"
+          }
+        },
+        "so" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Goobaha doonida"
           }
         },
         "zh-Hans" : {
@@ -526,28 +610,209 @@
         }
       }
     },
-    "Iowa" : {
-      "comment" : "Iowa ferry landing label",
+    "FREE" : {
+      "comment" : "Cost value - the ferry is free",
+      "extractionState" : "stale",
       "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "مجاني"
+          }
+        },
         "es" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Iowa"
+            "value" : "GRATIS"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "GRATUIT"
           }
         },
         "so" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Iowa"
+            "value" : "BILAASH"
           }
         },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "免费"
+          }
+        }
+      }
+    },
+    "Height" : {
+      "comment" : "Vehicle height limit label",
+      "extractionState" : "stale",
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "الارتفاع"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Altura"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hauteur"
+          }
+        },
+        "so" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dhererka"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "高度"
+          }
+        }
+      }
+    },
+    "Holiday Hours" : {
+      "comment" : "Holiday hours schedule label",
+      "extractionState" : "stale",
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ساعات العطلات"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Horario de días festivos"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Horaires des jours fériés"
+          }
+        },
+        "so" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Saacadaha fasaxa"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "节假日时间"
+          }
+        }
+      }
+    },
+    "Home" : {
+      "comment" : "Home tab label",
+      "extractionState" : "stale",
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "الرئيسية"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Inicio"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Accueil"
+          }
+        },
+        "so" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bogga hore"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "首页"
+          }
+        }
+      }
+    },
+    "Info" : {
+      "comment" : "Info tab label",
+      "extractionState" : "stale",
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "معلومات"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Info"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Info"
+          }
+        },
+        "so" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Macluumaad"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "信息"
+          }
+        }
+      }
+    },
+    "Iowa" : {
+      "comment" : "Iowa ferry landing label",
+      "extractionState" : "stale",
+      "localizations" : {
         "ar" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "آيوا"
           }
         },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Iowa"
+          }
+        },
         "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Iowa"
+          }
+        },
+        "so" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Iowa"
@@ -561,28 +826,568 @@
         }
       }
     },
-    "Wisconsin" : {
-      "comment" : "Wisconsin ferry landing label",
+    "Iowa DOT Info" : {
+      "comment" : "Iowa DOT link label",
+      "extractionState" : "stale",
       "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "معلومات وزارة النقل"
+          }
+        },
         "es" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Wisconsin"
+            "value" : "Info del DOT de Iowa"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Info DOT Iowa"
           }
         },
         "so" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Wisconsin"
+            "value" : "Macluumaadka Iowa DOT"
           }
         },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "爱荷华交通部信息"
+          }
+        }
+      }
+    },
+    "Iowa Side" : {
+      "comment" : "Iowa departure schedule label",
+      "extractionState" : "stale",
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "جانب آيوا"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Lado de Iowa"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Côté Iowa"
+          }
+        },
+        "so" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dhinaca Iowa"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "爱荷华出发"
+          }
+        }
+      }
+    },
+    "Lansing Car Ferry" : {
+      "comment" : "Home screen navigation title",
+      "extractionState" : "stale",
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "عبّارة لانسينغ للسيارات"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ferry de Lansing"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Traversier de Lansing"
+          }
+        },
+        "so" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Doonida Baabuurta Lansing"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "兰辛汽车渡轮"
+          }
+        }
+      }
+    },
+    "Length" : {
+      "comment" : "Vehicle length limit label",
+      "extractionState" : "stale",
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "الطول"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Longitud"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Longueur"
+          }
+        },
+        "so" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dhererka"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "长度"
+          }
+        }
+      }
+    },
+    "Live Cameras" : {
+      "comment" : "Live cameras screen navigation title",
+      "extractionState" : "stale",
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "الكاميرات المباشرة"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Cámaras en vivo"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Caméras en direct"
+          }
+        },
+        "so" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kamaradaha tooska ah"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "实时摄像头"
+          }
+        }
+      }
+    },
+    "Loading ferry info..." : {
+      "comment" : "Loading state message",
+      "extractionState" : "stale",
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "جاري تحميل معلومات العبّارة..."
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Cargando información del ferry..."
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Chargement des informations du traversier..."
+          }
+        },
+        "so" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Waa la soo dejinayaa macluumaadka doonida..."
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "正在加载渡轮信息..."
+          }
+        }
+      }
+    },
+    "Open in Maps" : {
+      "comment" : "Button to open ferry location in Maps app",
+      "extractionState" : "stale",
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "فتح في الخرائط"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Abrir en Mapas"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ouvrir dans Plans"
+          }
+        },
+        "so" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ku fur Khariidadaha"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "在地图中打开"
+          }
+        }
+      }
+    },
+    "Prohibited" : {
+      "comment" : "Prohibited vehicles disclosure group header",
+      "extractionState" : "stale",
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ممنوع"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Prohibidos"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Interdits"
+          }
+        },
+        "so" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Laga mamnuucay"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "禁止"
+          }
+        }
+      }
+    },
+    "Resources" : {
+      "comment" : "Resources section header on home screen",
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "الموارد"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Recursos"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ressources"
+          }
+        },
+        "so" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kheyraadka"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "资源"
+          }
+        }
+      }
+    },
+    "Schedule" : {
+      "comment" : "Schedule section header",
+      "extractionState" : "stale",
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "الجدول الزمني"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Horario"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Horaire"
+          }
+        },
+        "so" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Jadwalka"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "时刻表"
+          }
+        }
+      }
+    },
+    "Size Limits" : {
+      "comment" : "Size limits section header",
+      "extractionState" : "stale",
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "حدود الحجم"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Límites de tamaño"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Limites de taille"
+          }
+        },
+        "so" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Xadka cabbirka"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "尺寸限制"
+          }
+        }
+      }
+    },
+    "Unable to Load" : {
+      "comment" : "Error state title",
+      "extractionState" : "stale",
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "تعذر التحميل"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "No se pudo cargar"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Impossible de charger"
+          }
+        },
+        "so" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Lama soo dejin karo"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "无法加载"
+          }
+        }
+      }
+    },
+    "Vehicles" : {
+      "comment" : "Vehicle restrictions section header",
+      "extractionState" : "stale",
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "المركبات"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Vehículos"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Véhicules"
+          }
+        },
+        "so" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Gaadiidka"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "车辆"
+          }
+        }
+      }
+    },
+    "Weight" : {
+      "comment" : "Vehicle weight limit label",
+      "extractionState" : "stale",
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "الوزن"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Peso"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Poids"
+          }
+        },
+        "so" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Miisaanka"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "重量"
+          }
+        }
+      }
+    },
+    "Width" : {
+      "comment" : "Vehicle width limit label",
+      "extractionState" : "stale",
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "العرض"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ancho"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Largeur"
+          }
+        },
+        "so" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Balaca"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "宽度"
+          }
+        }
+      }
+    },
+    "Wisconsin" : {
+      "comment" : "Wisconsin ferry landing label",
+      "extractionState" : "stale",
+      "localizations" : {
         "ar" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "ويسكونسن"
           }
         },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Wisconsin"
+          }
+        },
         "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Wisconsin"
+          }
+        },
+        "so" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Wisconsin"
@@ -596,235 +1401,20 @@
         }
       }
     },
-    "Resources" : {
-      "comment" : "Resources section header on home screen",
-      "localizations" : {
-        "es" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Recursos"
-          }
-        },
-        "so" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Kheyraadka"
-          }
-        },
-        "ar" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "الموارد"
-          }
-        },
-        "fr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Ressources"
-          }
-        },
-        "zh-Hans" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "资源"
-          }
-        }
-      }
-    },
-    "Facebook Updates" : {
-      "comment" : "Facebook link label",
-      "localizations" : {
-        "es" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Actualizaciones de Facebook"
-          }
-        },
-        "so" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Cusbooneysiyaha Facebook"
-          }
-        },
-        "ar" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "تحديثات فيسبوك"
-          }
-        },
-        "fr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Mises à jour Facebook"
-          }
-        },
-        "zh-Hans" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Facebook更新"
-          }
-        }
-      }
-    },
-    "511 Iowa Traffic" : {
-      "comment" : "Traffic info link label",
-      "localizations" : {
-        "es" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Tráfico 511 Iowa"
-          }
-        },
-        "so" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Taraafikada 511 Iowa"
-          }
-        },
-        "ar" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "حركة المرور 511 آيوا"
-          }
-        },
-        "fr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Trafic 511 Iowa"
-          }
-        },
-        "zh-Hans" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "511爱荷华交通"
-          }
-        }
-      }
-    },
-    "Iowa DOT Info" : {
-      "comment" : "Iowa DOT link label",
-      "localizations" : {
-        "es" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Info del DOT de Iowa"
-          }
-        },
-        "so" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Macluumaadka Iowa DOT"
-          }
-        },
-        "ar" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "معلومات وزارة النقل"
-          }
-        },
-        "fr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Info DOT Iowa"
-          }
-        },
-        "zh-Hans" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "爱荷华交通部信息"
-          }
-        }
-      }
-    },
-    "Ferry Info" : {
-      "comment" : "Info screen navigation title",
-      "localizations" : {
-        "es" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Info del ferry"
-          }
-        },
-        "so" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Macluumaadka doonida"
-          }
-        },
-        "ar" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "معلومات العبّارة"
-          }
-        },
-        "fr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Info du traversier"
-          }
-        },
-        "zh-Hans" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "渡轮信息"
-          }
-        }
-      }
-    },
-    "Schedule" : {
-      "comment" : "Schedule section header",
-      "localizations" : {
-        "es" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Horario"
-          }
-        },
-        "so" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Jadwalka"
-          }
-        },
-        "ar" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "الجدول الزمني"
-          }
-        },
-        "fr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Horaire"
-          }
-        },
-        "zh-Hans" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "时刻表"
-          }
-        }
-      }
-    },
     "Wisconsin Side" : {
       "comment" : "Wisconsin departure schedule label",
+      "extractionState" : "stale",
       "localizations" : {
-        "es" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Lado de Wisconsin"
-          }
-        },
-        "so" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Dhinaca Wisconsin"
-          }
-        },
         "ar" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "جانب ويسكونسن"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Lado de Wisconsin"
           }
         },
         "fr" : {
@@ -833,570 +1423,16 @@
             "value" : "Côté Wisconsin"
           }
         },
+        "so" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dhinaca Wisconsin"
+          }
+        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "威斯康星出发"
-          }
-        }
-      }
-    },
-    "Iowa Side" : {
-      "comment" : "Iowa departure schedule label",
-      "localizations" : {
-        "es" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Lado de Iowa"
-          }
-        },
-        "so" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Dhinaca Iowa"
-          }
-        },
-        "ar" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "جانب آيوا"
-          }
-        },
-        "fr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Côté Iowa"
-          }
-        },
-        "zh-Hans" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "爱荷华出发"
-          }
-        }
-      }
-    },
-    "Holiday Hours" : {
-      "comment" : "Holiday hours schedule label",
-      "localizations" : {
-        "es" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Horario de días festivos"
-          }
-        },
-        "so" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Saacadaha fasaxa"
-          }
-        },
-        "ar" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "ساعات العطلات"
-          }
-        },
-        "fr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Horaires des jours fériés"
-          }
-        },
-        "zh-Hans" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "节假日时间"
-          }
-        }
-      }
-    },
-    "Commuter Priority" : {
-      "comment" : "Commuter priority windows label",
-      "localizations" : {
-        "es" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Prioridad para viajeros"
-          }
-        },
-        "so" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Mudnaanta shaqo-tagayaasha"
-          }
-        },
-        "ar" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "أولوية المسافرين"
-          }
-        },
-        "fr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Priorité aux navetteurs"
-          }
-        },
-        "zh-Hans" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "通勤优先"
-          }
-        }
-      }
-    },
-    "Vehicles" : {
-      "comment" : "Vehicle restrictions section header",
-      "localizations" : {
-        "es" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Vehículos"
-          }
-        },
-        "so" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Gaadiidka"
-          }
-        },
-        "ar" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "المركبات"
-          }
-        },
-        "fr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Véhicules"
-          }
-        },
-        "zh-Hans" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "车辆"
-          }
-        }
-      }
-    },
-    "Allowed" : {
-      "comment" : "Allowed vehicles disclosure group header",
-      "localizations" : {
-        "es" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Permitidos"
-          }
-        },
-        "so" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "La ogol yahay"
-          }
-        },
-        "ar" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "مسموح"
-          }
-        },
-        "fr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Autorisés"
-          }
-        },
-        "zh-Hans" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "允许"
-          }
-        }
-      }
-    },
-    "Prohibited" : {
-      "comment" : "Prohibited vehicles disclosure group header",
-      "localizations" : {
-        "es" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Prohibidos"
-          }
-        },
-        "so" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Laga mamnuucay"
-          }
-        },
-        "ar" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "ممنوع"
-          }
-        },
-        "fr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Interdits"
-          }
-        },
-        "zh-Hans" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "禁止"
-          }
-        }
-      }
-    },
-    "Size Limits" : {
-      "comment" : "Size limits section header",
-      "localizations" : {
-        "es" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Límites de tamaño"
-          }
-        },
-        "so" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Xadka cabbirka"
-          }
-        },
-        "ar" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "حدود الحجم"
-          }
-        },
-        "fr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Limites de taille"
-          }
-        },
-        "zh-Hans" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "尺寸限制"
-          }
-        }
-      }
-    },
-    "Height" : {
-      "comment" : "Vehicle height limit label",
-      "localizations" : {
-        "es" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Altura"
-          }
-        },
-        "so" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Dhererka"
-          }
-        },
-        "ar" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "الارتفاع"
-          }
-        },
-        "fr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Hauteur"
-          }
-        },
-        "zh-Hans" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "高度"
-          }
-        }
-      }
-    },
-    "Length" : {
-      "comment" : "Vehicle length limit label",
-      "localizations" : {
-        "es" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Longitud"
-          }
-        },
-        "so" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Dhererka"
-          }
-        },
-        "ar" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "الطول"
-          }
-        },
-        "fr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Longueur"
-          }
-        },
-        "zh-Hans" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "长度"
-          }
-        }
-      }
-    },
-    "Width" : {
-      "comment" : "Vehicle width limit label",
-      "localizations" : {
-        "es" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Ancho"
-          }
-        },
-        "so" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Balaca"
-          }
-        },
-        "ar" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "العرض"
-          }
-        },
-        "fr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Largeur"
-          }
-        },
-        "zh-Hans" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "宽度"
-          }
-        }
-      }
-    },
-    "Weight" : {
-      "comment" : "Vehicle weight limit label",
-      "localizations" : {
-        "es" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Peso"
-          }
-        },
-        "so" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Miisaanka"
-          }
-        },
-        "ar" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "الوزن"
-          }
-        },
-        "fr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Poids"
-          }
-        },
-        "zh-Hans" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "重量"
-          }
-        }
-      }
-    },
-    "%lld ft" : {
-      "comment" : "Feet measurement value (e.g. 11 ft)",
-      "localizations" : {
-        "es" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "%lld pies"
-          }
-        },
-        "so" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "%lld fiit"
-          }
-        },
-        "ar" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "%lld قدم"
-          }
-        },
-        "fr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "%lld pieds"
-          }
-        },
-        "zh-Hans" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "%lld英尺"
-          }
-        }
-      }
-    },
-    "%lld tons" : {
-      "comment" : "Weight in tons value (e.g. 10 tons)",
-      "localizations" : {
-        "es" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "%lld toneladas"
-          }
-        },
-        "so" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "%lld tan"
-          }
-        },
-        "ar" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "%lld طن"
-          }
-        },
-        "fr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "%lld tonnes"
-          }
-        },
-        "zh-Hans" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "%lld吨"
-          }
-        }
-      }
-    },
-    "Live Cameras" : {
-      "comment" : "Live cameras screen navigation title",
-      "localizations" : {
-        "es" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Cámaras en vivo"
-          }
-        },
-        "so" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Kamaradaha tooska ah"
-          }
-        },
-        "ar" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "الكاميرات المباشرة"
-          }
-        },
-        "fr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Caméras en direct"
-          }
-        },
-        "zh-Hans" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "实时摄像头"
-          }
-        }
-      }
-    },
-    "An unexpected error occurred." : {
-      "comment" : "Generic error message",
-      "localizations" : {
-        "es" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Ocurrió un error inesperado."
-          }
-        },
-        "so" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Khalad aan la filayn ayaa dhacay."
-          }
-        },
-        "ar" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "حدث خطأ غير متوقع."
-          }
-        },
-        "fr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Une erreur inattendue s'est produite."
-          }
-        },
-        "zh-Hans" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "发生了意外错误。"
-          }
-        }
-      }
-    },
-    "Open in Maps" : {
-      "comment" : "Button to open ferry location in Maps app",
-      "localizations" : {
-        "es" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Abrir en Mapas"
-          }
-        },
-        "so" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Ku fur Khariidadaha"
-          }
-        },
-        "ar" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "فتح في الخرائط"
-          }
-        },
-        "fr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Ouvrir dans Plans"
-          }
-        },
-        "zh-Hans" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "在地图中打开"
           }
         }
       }
