@@ -7,16 +7,24 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		209BCEFCE3B991F15456E0C3 /* VideoPlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2500CB7139D60BC773F49092 /* VideoPlayerView.swift */; };
+		3FBB39674BC31F8BC5251035 /* CameraDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 892DC1630BC8CC70EFE10369 /* CameraDetailView.swift */; };
+		4B037504D0EA0AE4F7DDF069 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1A24A57F7F0680BFB015388 /* HomeView.swift */; };
 		7BFFC821F57F1ADB96C67A52 /* FerryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 016223D069D991502877E1A1 /* FerryViewModel.swift */; };
 		95C00DBA2AE69C074B8BBB10 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FEBF3364034FD5232667FAF /* ContentView.swift */; };
 		BC96AE129145A4CEFA10937E /* LansingFerryApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 276B0D3F779B8A362A5277DB /* LansingFerryApp.swift */; };
+		E88C44151A8396EB5E466B90 /* LiveCamerasView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A45F3106947302BFD67C47E8 /* LiveCamerasView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		016223D069D991502877E1A1 /* FerryViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FerryViewModel.swift; sourceTree = "<group>"; };
+		2500CB7139D60BC773F49092 /* VideoPlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoPlayerView.swift; sourceTree = "<group>"; };
 		276B0D3F779B8A362A5277DB /* LansingFerryApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LansingFerryApp.swift; sourceTree = "<group>"; };
 		46BF3D4B4BE1C6EA1012D5A5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		5FEBF3364034FD5232667FAF /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		892DC1630BC8CC70EFE10369 /* CameraDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraDetailView.swift; sourceTree = "<group>"; };
+		A1A24A57F7F0680BFB015388 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		A45F3106947302BFD67C47E8 /* LiveCamerasView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveCamerasView.swift; sourceTree = "<group>"; };
 		FC6B5BA327111278E16708A3 /* LansingFerry.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = LansingFerry.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -37,13 +45,33 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		6AE282DFA00AA8BB3BEF59D8 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				892DC1630BC8CC70EFE10369 /* CameraDetailView.swift */,
+				A1A24A57F7F0680BFB015388 /* HomeView.swift */,
+				A45F3106947302BFD67C47E8 /* LiveCamerasView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		E72187B5CAF5A57A78190EEB /* Player */ = {
+			isa = PBXGroup;
+			children = (
+				2500CB7139D60BC773F49092 /* VideoPlayerView.swift */,
+			);
+			path = Player;
+			sourceTree = "<group>";
+		};
 		E9322792B2BA38DF643CE694 /* LansingFerry */ = {
 			isa = PBXGroup;
 			children = (
 				5FEBF3364034FD5232667FAF /* ContentView.swift */,
 				46BF3D4B4BE1C6EA1012D5A5 /* Info.plist */,
 				276B0D3F779B8A362A5277DB /* LansingFerryApp.swift */,
+				E72187B5CAF5A57A78190EEB /* Player */,
 				EC86B64BE984A51770E4C5C2 /* ViewModels */,
+				6AE282DFA00AA8BB3BEF59D8 /* Views */,
 			);
 			path = LansingFerry;
 			sourceTree = "<group>";
@@ -137,9 +165,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3FBB39674BC31F8BC5251035 /* CameraDetailView.swift in Sources */,
 				95C00DBA2AE69C074B8BBB10 /* ContentView.swift in Sources */,
 				7BFFC821F57F1ADB96C67A52 /* FerryViewModel.swift in Sources */,
+				4B037504D0EA0AE4F7DDF069 /* HomeView.swift in Sources */,
 				BC96AE129145A4CEFA10937E /* LansingFerryApp.swift in Sources */,
+				E88C44151A8396EB5E466B90 /* LiveCamerasView.swift in Sources */,
+				209BCEFCE3B991F15456E0C3 /* VideoPlayerView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

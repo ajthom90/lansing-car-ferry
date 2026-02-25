@@ -9,12 +9,12 @@ struct ContentView: View {
                 ProgressView("Loading ferry info...")
             } else if let ferryInfo = viewModel.ferryInfo {
                 TabView {
-                    Text("Home")
+                    HomeView(ferryInfo: ferryInfo)
                         .tabItem {
                             Label("Home", systemImage: "house")
                         }
 
-                    Text("Cameras")
+                    LiveCamerasView(cameras: ferryInfo.cameras)
                         .tabItem {
                             Label("Cameras", systemImage: "video")
                         }
