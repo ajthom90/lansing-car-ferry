@@ -117,9 +117,9 @@ struct HomeView: View {
                 .foregroundStyle(.secondary)
                 .multilineTextAlignment(.center)
             HStack(spacing: 16) {
-                Link("Privacy Policy", destination: URL(string: "https://cdn.jsdelivr.net/gh/ajthom90/lansing-car-ferry@main/data/privacy-policy.html")!)
+                Link("Privacy Policy", destination: URL(string: "https://ajthom90.github.io/lansing-car-ferry/privacy-policy.html")!)
                     .font(.caption)
-                Link("Terms of Use", destination: URL(string: "https://cdn.jsdelivr.net/gh/ajthom90/lansing-car-ferry@main/data/terms-of-use.html")!)
+                Link("Terms of Use", destination: URL(string: "https://ajthom90.github.io/lansing-car-ferry/terms-of-use.html")!)
                     .font(.caption)
             }
         }

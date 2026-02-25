@@ -36,10 +36,10 @@ ferry,lansing,iowa,wisconsin,mississippi,car ferry,schedule,cameras,free,desoto
 - Google Play: Everyone
 
 ## Privacy Policy URL
-https://cdn.jsdelivr.net/gh/ajthom90/lansing-car-ferry@main/data/privacy-policy.html
+https://ajthom90.github.io/lansing-car-ferry/privacy-policy.html
 
 ## Terms of Use URL
-https://cdn.jsdelivr.net/gh/ajthom90/lansing-car-ferry@main/data/terms-of-use.html
+https://ajthom90.github.io/lansing-car-ferry/terms-of-use.html
 
 ## Contact Email
 lansingferryapp@ajthom.dev

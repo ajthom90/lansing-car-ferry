@@ -204,7 +204,7 @@ fun HomeScreen(
                         color = MaterialTheme.colorScheme.primary,
                         modifier = Modifier.clickable {
                             try {
-                                context.startActivity(Intent(Intent.ACTION_VIEW, Uri.parse("https://cdn.jsdelivr.net/gh/ajthom90/lansing-car-ferry@main/data/privacy-policy.html")))
+                                context.startActivity(Intent(Intent.ACTION_VIEW, Uri.parse("https://ajthom90.github.io/lansing-car-ferry/privacy-policy.html")))
                             } catch (_: android.content.ActivityNotFoundException) {}
                         },
                     )
@@ -214,7 +214,7 @@ fun HomeScreen(
                         color = MaterialTheme.colorScheme.primary,
                         modifier = Modifier.clickable {
                             try {
-                                context.startActivity(Intent(Intent.ACTION_VIEW, Uri.parse("https://cdn.jsdelivr.net/gh/ajthom90/lansing-car-ferry@main/data/terms-of-use.html")))
+                                context.startActivity(Intent(Intent.ACTION_VIEW, Uri.parse("https://ajthom90.github.io/lansing-car-ferry/terms-of-use.html")))
                             } catch (_: android.content.ActivityNotFoundException) {}
                         },
                     )
