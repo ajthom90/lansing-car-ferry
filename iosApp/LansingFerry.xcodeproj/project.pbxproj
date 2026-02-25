@@ -12,6 +12,7 @@
 		3FBB39674BC31F8BC5251035 /* CameraDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 892DC1630BC8CC70EFE10369 /* CameraDetailView.swift */; };
 		4B037504D0EA0AE4F7DDF069 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1A24A57F7F0680BFB015388 /* HomeView.swift */; };
 		58319C56014FB3359F1929DF /* FAQView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90CA2F1185B4EBBA6C64A440 /* FAQView.swift */; };
+		6881DDFD40D71B59FC7B77F4 /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 02DF4ABEE5B8DC01D9502592 /* Localizable.xcstrings */; };
 		7BFFC821F57F1ADB96C67A52 /* FerryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 016223D069D991502877E1A1 /* FerryViewModel.swift */; };
 		95C00DBA2AE69C074B8BBB10 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FEBF3364034FD5232667FAF /* ContentView.swift */; };
 		B9C6C347D467113F56AE1737 /* InfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB9A0F17F93F8E5FE77F7D5B /* InfoView.swift */; };
@@ -21,6 +22,7 @@
 
 /* Begin PBXFileReference section */
 		016223D069D991502877E1A1 /* FerryViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FerryViewModel.swift; sourceTree = "<group>"; };
+		02DF4ABEE5B8DC01D9502592 /* Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
 		2500CB7139D60BC773F49092 /* VideoPlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoPlayerView.swift; sourceTree = "<group>"; };
 		276B0D3F779B8A362A5277DB /* LansingFerryApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LansingFerryApp.swift; sourceTree = "<group>"; };
 		46BF3D4B4BE1C6EA1012D5A5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
@@ -78,6 +80,7 @@
 				5FEBF3364034FD5232667FAF /* ContentView.swift */,
 				46BF3D4B4BE1C6EA1012D5A5 /* Info.plist */,
 				276B0D3F779B8A362A5277DB /* LansingFerryApp.swift */,
+				02DF4ABEE5B8DC01D9502592 /* Localizable.xcstrings */,
 				E72187B5CAF5A57A78190EEB /* Player */,
 				EC86B64BE984A51770E4C5C2 /* ViewModels */,
 				6AE282DFA00AA8BB3BEF59D8 /* Views */,
@@ -154,6 +157,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0D3B5119EC79832C57DBE257 /* Assets.xcassets in Resources */,
+				6881DDFD40D71B59FC7B77F4 /* Localizable.xcstrings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

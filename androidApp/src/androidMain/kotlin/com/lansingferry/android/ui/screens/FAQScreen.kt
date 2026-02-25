@@ -25,7 +25,9 @@ import androidx.compose.runtime.mutableStateMapOf
 import androidx.compose.runtime.remember
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.unit.dp
+import com.lansingferry.android.R
 import com.lansingferry.shared.model.FAQ
 
 @OptIn(ExperimentalMaterial3Api::class)
@@ -34,7 +36,7 @@ fun FAQScreen(faqs: List<FAQ>) {
     val expandedItems = remember { mutableStateMapOf<String, Boolean>() }
 
     Column(modifier = Modifier.fillMaxSize()) {
-        TopAppBar(title = { Text("FAQ") })
+        TopAppBar(title = { Text(stringResource(R.string.faq_title)) })
 
         LazyColumn(
             modifier = Modifier.fillMaxSize().padding(horizontal = 16.dp),
@@ -62,7 +64,7 @@ fun FAQScreen(faqs: List<FAQ>) {
                             )
                             Icon(
                                 if (isExpanded) Icons.Default.ExpandLess else Icons.Default.ExpandMore,
-                                contentDescription = if (isExpanded) "Collapse" else "Expand",
+                                contentDescription = if (isExpanded) stringResource(R.string.a11y_collapse) else stringResource(R.string.a11y_expand),
                             )
                         }
                         AnimatedVisibility(visible = isExpanded) {

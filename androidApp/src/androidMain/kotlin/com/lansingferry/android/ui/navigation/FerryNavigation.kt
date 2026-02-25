@@ -15,6 +15,7 @@ import androidx.compose.runtime.Composable
 import androidx.compose.runtime.getValue
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.vector.ImageVector
+import androidx.compose.ui.res.stringResource
 import androidx.navigation.NavDestination.Companion.hasRoute
 import androidx.navigation.NavDestination.Companion.hierarchy
 import androidx.navigation.compose.NavHost
@@ -27,6 +28,7 @@ import com.lansingferry.android.ui.screens.HomeScreen
 import com.lansingferry.android.ui.screens.FAQScreen
 import com.lansingferry.android.ui.screens.InfoScreen
 import com.lansingferry.android.ui.screens.LiveCamerasScreen
+import com.lansingferry.android.R
 import com.lansingferry.shared.model.FerryInfo
 import kotlinx.serialization.Serializable
 
@@ -37,16 +39,16 @@ import kotlinx.serialization.Serializable
 @Serializable data object FaqRoute
 
 data class TopLevelRoute(
-    val label: String,
+    val labelRes: Int,
     val route: Any,
     val icon: ImageVector,
 )
 
 val topLevelRoutes = listOf(
-    TopLevelRoute("Home", HomeRoute, Icons.Default.Home),
-    TopLevelRoute("Cameras", CamerasRoute, Icons.Default.Videocam),
-    TopLevelRoute("Info", InfoRoute, Icons.Default.Info),
-    TopLevelRoute("FAQ", FaqRoute, Icons.Default.QuestionAnswer),
+    TopLevelRoute(R.string.tab_home, HomeRoute, Icons.Default.Home),
+    TopLevelRoute(R.string.tab_cameras, CamerasRoute, Icons.Default.Videocam),
+    TopLevelRoute(R.string.tab_info, InfoRoute, Icons.Default.Info),
+    TopLevelRoute(R.string.tab_faq, FaqRoute, Icons.Default.QuestionAnswer),
 )
 
 @Composable
@@ -65,8 +67,8 @@ fun FerryNavigation(
 
                 topLevelRoutes.forEach { route ->
                     NavigationBarItem(
-                        icon = { Icon(route.icon, contentDescription = route.label) },
-                        label = { Text(route.label) },
+                        icon = { Icon(route.icon, contentDescription = stringResource(route.labelRes)) },
+                        label = { Text(stringResource(route.labelRes)) },
                         selected = currentDestination?.hierarchy?.any {
                             it.hasRoute(route.route::class)
                         } == true,

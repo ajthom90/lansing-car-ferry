@@ -24,7 +24,7 @@ final class FerryViewModel {
                 self.errorMessage = error.message
             }
         } catch {
-            self.errorMessage = "An unexpected error occurred."
+            self.errorMessage = String(localized: "An unexpected error occurred.")
         }
 
         isLoading = false

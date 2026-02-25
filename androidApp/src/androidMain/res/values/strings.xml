@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- App -->
+    <string name="app_name">Lansing Ferry</string>
+
+    <!-- Tabs -->
+    <string name="tab_home">Home</string>
+    <string name="tab_cameras">Cameras</string>
+    <string name="tab_info">Info</string>
+    <string name="tab_faq">FAQ</string>
+
+    <!-- Home screen -->
+    <string name="home_title">Lansing Car Ferry</string>
+    <string name="home_facebook_notice">Check the Facebook page regularly for service updates and schedule changes. No Facebook account is needed to view updates.</string>
+    <string name="home_crossing">Crossing</string>
+    <string name="home_crossing_value">%1$d min</string>
+    <string name="home_capacity">Capacity</string>
+    <string name="home_capacity_value">~%1$d vehicles</string>
+    <string name="home_cost">Cost</string>
+    <string name="home_cost_value">FREE</string>
+    <string name="home_locations_section">Ferry Locations</string>
+    <string name="home_location_iowa">Iowa</string>
+    <string name="home_location_wisconsin">Wisconsin</string>
+    <string name="home_resources_section">Resources</string>
+    <string name="home_link_facebook">Facebook Updates</string>
+    <string name="home_link_traffic">511 Iowa Traffic</string>
+    <string name="home_link_iowadot">Iowa DOT Info</string>
+    <string name="home_open_in_maps">Open in Maps</string>
+
+    <!-- Info screen -->
+    <string name="info_title">Ferry Info</string>
+    <string name="info_schedule_section">Schedule</string>
+    <string name="info_wisconsin_departure">Wisconsin Departure</string>
+    <string name="info_iowa_departure">Iowa Departure</string>
+    <string name="info_holiday_hours">Holiday Hours</string>
+    <string name="info_commuter_priority">Commuter Priority</string>
+    <string name="info_vehicles_section">Vehicles</string>
+    <string name="info_allowed">Allowed</string>
+    <string name="info_prohibited">Prohibited</string>
+    <string name="info_size_limits_section">Size Limits</string>
+    <string name="info_height">Height</string>
+    <string name="info_height_value">%1$d ft</string>
+    <string name="info_length">Length</string>
+    <string name="info_length_value">%1$d ft</string>
+    <string name="info_width">Width</string>
+    <string name="info_weight">Weight</string>
+    <string name="info_weight_value">%1$d tons</string>
+    <string name="info_time_am">AM</string>
+    <string name="info_time_pm">PM</string>
+
+    <!-- Cameras screen -->
+    <string name="cameras_title">Live Cameras</string>
+
+    <!-- FAQ screen -->
+    <string name="faq_title">FAQ</string>
+
+    <!-- Accessibility -->
+    <string name="a11y_expand">Expand</string>
+    <string name="a11y_collapse">Collapse</string>
+    <string name="a11y_back">Back</string>
+
+    <!-- Loading/Error states -->
+    <string name="error_unexpected">An unexpected error occurred.</string>
+</resources>

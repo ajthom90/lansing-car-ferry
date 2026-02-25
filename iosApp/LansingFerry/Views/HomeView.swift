@@ -11,6 +11,7 @@ struct HomeView: View {
             ScrollView {
                 VStack(spacing: 16) {
                     statusBanner
+                    facebookNotice
                     quickInfoCards
                     locationsSection
                     linksSection
@@ -37,22 +38,38 @@ struct HomeView: View {
         .clipShape(RoundedRectangle(cornerRadius: 12))
     }
 
+    private var facebookNotice: some View {
+        Link(destination: URL(string: ferryInfo.links.facebook)!) {
+            HStack(spacing: 8) {
+                Image(systemName: "exclamationmark.triangle.fill")
+                    .foregroundStyle(.orange)
+                Text("Check the Facebook page regularly for service updates and schedule changes. No Facebook account is needed to view updates.")
+                    .font(.subheadline)
+                    .multilineTextAlignment(.leading)
+            }
+            .frame(maxWidth: .infinity, alignment: .leading)
+            .padding()
+            .background(.orange.opacity(0.1))
+            .clipShape(RoundedRectangle(cornerRadius: 12))
+        }
+    }
+
     private var quickInfoCards: some View {
         HStack(spacing: 12) {
             InfoCard(
                 icon: "clock",
-                title: "Crossing",
-                value: "\(ferryInfo.schedule.crossingDurationMinutes) min"
+                title: String(localized: "Crossing"),
+                value: String(localized: "\(Int(ferryInfo.schedule.crossingDurationMinutes)) min")
             )
             InfoCard(
                 icon: "car.2",
-                title: "Capacity",
-                value: "~\(ferryInfo.schedule.approximateCapacity) vehicles"
+                title: String(localized: "Capacity"),
+                value: String(localized: "~\(Int(ferryInfo.schedule.approximateCapacity)) vehicles")
             )
             InfoCard(
                 icon: "dollarsign.circle",
-                title: "Cost",
-                value: "FREE"
+                title: String(localized: "Cost"),
+                value: String(localized: "FREE")
             )
         }
     }
@@ -63,11 +80,11 @@ struct HomeView: View {
                 .font(.headline)
 
             LocationRow(
-                label: "Iowa",
+                label: String(localized: "Iowa"),
                 location: ferryInfo.locations.iowa
             )
             LocationRow(
-                label: "Wisconsin",
+                label: String(localized: "Wisconsin"),
                 location: ferryInfo.locations.wisconsin
             )
         }

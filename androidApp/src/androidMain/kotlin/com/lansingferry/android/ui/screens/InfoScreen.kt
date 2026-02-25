@@ -34,14 +34,16 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.graphics.vector.ImageVector
+import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.unit.dp
+import com.lansingferry.android.R
 import com.lansingferry.shared.model.FerryInfo
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
 fun InfoScreen(ferryInfo: FerryInfo) {
     Column(modifier = Modifier.fillMaxSize()) {
-        TopAppBar(title = { Text("Ferry Info") })
+        TopAppBar(title = { Text(stringResource(R.string.info_title)) })
 
         Column(
             modifier = Modifier
@@ -51,24 +53,24 @@ fun InfoScreen(ferryInfo: FerryInfo) {
             verticalArrangement = Arrangement.spacedBy(12.dp),
         ) {
             // Schedule Section
-            SectionHeader("Schedule")
+            SectionHeader(stringResource(R.string.info_schedule_section))
 
             InfoRow(
-                label = "Wisconsin Departure",
+                label = stringResource(R.string.info_wisconsin_departure),
                 value = formatRange(
                     ferryInfo.schedule.regularHours.wisconsinDeparture.start,
                     ferryInfo.schedule.regularHours.wisconsinDeparture.end,
                 ),
             )
             InfoRow(
-                label = "Iowa Departure",
+                label = stringResource(R.string.info_iowa_departure),
                 value = formatRange(
                     ferryInfo.schedule.regularHours.iowaDeparture.start,
                     ferryInfo.schedule.regularHours.iowaDeparture.end,
                 ),
             )
             InfoRow(
-                label = "Holiday Hours",
+                label = stringResource(R.string.info_holiday_hours),
                 value = formatRange(
                     ferryInfo.schedule.holidayHours.start,
                     ferryInfo.schedule.holidayHours.end,
@@ -84,7 +86,7 @@ fun InfoScreen(ferryInfo: FerryInfo) {
                 ) {
                     Column(modifier = Modifier.padding(16.dp)) {
                         Text(
-                            text = "Commuter Priority",
+                            text = stringResource(R.string.info_commuter_priority),
                             style = MaterialTheme.typography.titleSmall,
                         )
                         Spacer(Modifier.height(8.dp))
@@ -101,17 +103,17 @@ fun InfoScreen(ferryInfo: FerryInfo) {
             Spacer(Modifier.height(8.dp))
 
             // Vehicles Section
-            SectionHeader("Vehicles")
+            SectionHeader(stringResource(R.string.info_vehicles_section))
 
             ExpandableList(
-                title = "Allowed",
+                title = stringResource(R.string.info_allowed),
                 items = ferryInfo.vehicleRestrictions.allowed,
                 icon = Icons.Default.Check,
                 iconTint = Color(0xFF4CAF50),
             )
 
             ExpandableList(
-                title = "Prohibited",
+                title = stringResource(R.string.info_prohibited),
                 items = ferryInfo.vehicleRestrictions.prohibited,
                 icon = Icons.Default.Close,
                 iconTint = Color(0xFFF44336),
@@ -120,13 +122,13 @@ fun InfoScreen(ferryInfo: FerryInfo) {
             Spacer(Modifier.height(8.dp))
 
             // Size Limits Section
-            SectionHeader("Size Limits")
+            SectionHeader(stringResource(R.string.info_size_limits_section))
 
             val sizeLimits = ferryInfo.vehicleRestrictions.sizeLimits
-            InfoRow(label = "Height", value = "${sizeLimits.heightFeet} ft")
-            InfoRow(label = "Length", value = "${sizeLimits.lengthFeet} ft")
-            InfoRow(label = "Width", value = sizeLimits.widthFeetInches)
-            InfoRow(label = "Weight", value = "${sizeLimits.weightTons} tons")
+            InfoRow(label = stringResource(R.string.info_height), value = stringResource(R.string.info_height_value, sizeLimits.heightFeet))
+            InfoRow(label = stringResource(R.string.info_length), value = stringResource(R.string.info_length_value, sizeLimits.lengthFeet))
+            InfoRow(label = stringResource(R.string.info_width), value = sizeLimits.widthFeetInches)
+            InfoRow(label = stringResource(R.string.info_weight), value = stringResource(R.string.info_weight_value, sizeLimits.weightTons))
         }
     }
 }
@@ -206,7 +208,7 @@ private fun ExpandableList(
                 )
                 Icon(
                     imageVector = if (expanded) Icons.Default.ExpandLess else Icons.Default.ExpandMore,
-                    contentDescription = if (expanded) "Collapse" else "Expand",
+                    contentDescription = if (expanded) stringResource(R.string.a11y_collapse) else stringResource(R.string.a11y_expand),
                 )
             }
 

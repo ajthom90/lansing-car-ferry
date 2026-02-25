@@ -1,0 +1,123 @@
+{
+  "sourceLanguage" : "en",
+  "strings" : {
+    "Lansing Car Ferry" : {
+      "comment" : "Home screen navigation title"
+    },
+    "Loading ferry info..." : {
+      "comment" : "Loading state message"
+    },
+    "Home" : {
+      "comment" : "Home tab label"
+    },
+    "Cameras" : {
+      "comment" : "Cameras tab label"
+    },
+    "Info" : {
+      "comment" : "Info tab label"
+    },
+    "FAQ" : {
+      "comment" : "FAQ tab label and navigation title"
+    },
+    "Unable to Load" : {
+      "comment" : "Error state title"
+    },
+    "Check the Facebook page regularly for service updates and schedule changes. No Facebook account is needed to view updates." : {
+      "comment" : "Facebook notice banner on home screen"
+    },
+    "Crossing" : {
+      "comment" : "Crossing time info card title"
+    },
+    "%lld min" : {
+      "comment" : "Crossing duration value (e.g. 15 min)"
+    },
+    "Capacity" : {
+      "comment" : "Vehicle capacity info card title"
+    },
+    "~%lld vehicles" : {
+      "comment" : "Approximate vehicle capacity value"
+    },
+    "Cost" : {
+      "comment" : "Cost info card title"
+    },
+    "FREE" : {
+      "comment" : "Cost value - the ferry is free"
+    },
+    "Ferry Locations" : {
+      "comment" : "Locations section header on home screen"
+    },
+    "Iowa" : {
+      "comment" : "Iowa ferry landing label"
+    },
+    "Wisconsin" : {
+      "comment" : "Wisconsin ferry landing label"
+    },
+    "Resources" : {
+      "comment" : "Resources section header on home screen"
+    },
+    "Facebook Updates" : {
+      "comment" : "Facebook link label"
+    },
+    "511 Iowa Traffic" : {
+      "comment" : "Traffic info link label"
+    },
+    "Iowa DOT Info" : {
+      "comment" : "Iowa DOT link label"
+    },
+    "Ferry Info" : {
+      "comment" : "Info screen navigation title"
+    },
+    "Schedule" : {
+      "comment" : "Schedule section header"
+    },
+    "Wisconsin Side" : {
+      "comment" : "Wisconsin departure schedule label"
+    },
+    "Iowa Side" : {
+      "comment" : "Iowa departure schedule label"
+    },
+    "Holiday Hours" : {
+      "comment" : "Holiday hours schedule label"
+    },
+    "Commuter Priority" : {
+      "comment" : "Commuter priority windows label"
+    },
+    "Vehicles" : {
+      "comment" : "Vehicle restrictions section header"
+    },
+    "Allowed" : {
+      "comment" : "Allowed vehicles disclosure group header"
+    },
+    "Prohibited" : {
+      "comment" : "Prohibited vehicles disclosure group header"
+    },
+    "Size Limits" : {
+      "comment" : "Size limits section header"
+    },
+    "Height" : {
+      "comment" : "Vehicle height limit label"
+    },
+    "Length" : {
+      "comment" : "Vehicle length limit label"
+    },
+    "Width" : {
+      "comment" : "Vehicle width limit label"
+    },
+    "Weight" : {
+      "comment" : "Vehicle weight limit label"
+    },
+    "%lld ft" : {
+      "comment" : "Feet measurement value (e.g. 11 ft)"
+    },
+    "%lld tons" : {
+      "comment" : "Weight in tons value (e.g. 10 tons)"
+    },
+    "Live Cameras" : {
+      "comment" : "Live cameras screen navigation title"
+    },
+    "An unexpected error occurred." : {
+      "comment" : "Generic error message"
+    }
+  },
+  "version" : "1.0"
+}

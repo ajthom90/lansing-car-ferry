@@ -58,10 +58,10 @@ struct InfoView: View {
 
     private var sizeLimitsSection: some View {
         Section("Size Limits") {
-            LabeledContent("Height", value: "\(Int(ferryInfo.vehicleRestrictions.sizeLimits.heightFeet)) ft")
-            LabeledContent("Length", value: "\(Int(ferryInfo.vehicleRestrictions.sizeLimits.lengthFeet)) ft")
+            LabeledContent("Height", value: String(localized: "\(Int(ferryInfo.vehicleRestrictions.sizeLimits.heightFeet)) ft"))
+            LabeledContent("Length", value: String(localized: "\(Int(ferryInfo.vehicleRestrictions.sizeLimits.lengthFeet)) ft"))
             LabeledContent("Width", value: ferryInfo.vehicleRestrictions.sizeLimits.widthFeetInches)
-            LabeledContent("Weight", value: "\(Int(ferryInfo.vehicleRestrictions.sizeLimits.weightTons)) tons")
+            LabeledContent("Weight", value: String(localized: "\(Int(ferryInfo.vehicleRestrictions.sizeLimits.weightTons)) tons"))
         }
     }
 

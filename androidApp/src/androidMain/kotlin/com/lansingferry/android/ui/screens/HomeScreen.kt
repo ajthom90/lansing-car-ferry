@@ -21,6 +21,7 @@ import androidx.compose.material.icons.filled.Language
 import androidx.compose.material.icons.filled.Link
 import androidx.compose.material.icons.filled.Map
 import androidx.compose.material.icons.filled.MoneyOff
+import androidx.compose.material.icons.filled.Warning
 import androidx.compose.material.icons.filled.Traffic
 import androidx.compose.material3.Card
 import androidx.compose.material3.CardDefaults
@@ -33,11 +34,14 @@ import androidx.compose.material3.TopAppBar
 import androidx.compose.material3.pulltorefresh.PullToRefreshBox
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
+import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.platform.LocalContext
+import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
+import com.lansingferry.android.R
 import com.lansingferry.shared.model.FerryInfo
 import com.lansingferry.shared.model.Location
 
@@ -51,7 +55,7 @@ fun HomeScreen(
     val context = LocalContext.current
 
     Column(modifier = Modifier.fillMaxSize()) {
-        TopAppBar(title = { Text("Lansing Car Ferry") })
+        TopAppBar(title = { Text(stringResource(R.string.home_title)) })
 
         PullToRefreshBox(
             isRefreshing = isRefreshing,
@@ -81,6 +85,36 @@ fun HomeScreen(
                     )
                 }
 
+                // Facebook notice
+                Card(
+                    colors = CardDefaults.cardColors(
+                        containerColor = Color(0xFFFFF3E0),
+                    ),
+                    modifier = Modifier.fillMaxWidth().clickable {
+                        try {
+                            context.startActivity(Intent(Intent.ACTION_VIEW, Uri.parse(ferryInfo.links.facebook)))
+                        } catch (_: android.content.ActivityNotFoundException) {
+                        }
+                    },
+                ) {
+                    Row(
+                        verticalAlignment = Alignment.CenterVertically,
+                        modifier = Modifier.padding(16.dp),
+                    ) {
+                        Icon(
+                            Icons.Default.Warning,
+                            contentDescription = null,
+                            tint = Color(0xFFFF9800),
+                            modifier = Modifier.size(24.dp),
+                        )
+                        Text(
+                            text = stringResource(R.string.home_facebook_notice),
+                            style = MaterialTheme.typography.bodyMedium,
+                            modifier = Modifier.padding(start = 8.dp),
+                        )
+                    }
+                }
+
                 // Quick info cards
                 Row(
                     horizontalArrangement = Arrangement.spacedBy(12.dp),
@@ -88,28 +122,28 @@ fun HomeScreen(
                 ) {
                     InfoCard(
                         icon = Icons.Default.AccessTime,
-                        title = "Crossing",
-                        value = "${ferryInfo.schedule.crossingDurationMinutes} min",
+                        title = stringResource(R.string.home_crossing),
+                        value = stringResource(R.string.home_crossing_value, ferryInfo.schedule.crossingDurationMinutes),
                         modifier = Modifier.weight(1f),
                     )
                     InfoCard(
                         icon = Icons.Default.DirectionsCar,
-                        title = "Capacity",
-                        value = "~${ferryInfo.schedule.approximateCapacity} vehicles",
+                        title = stringResource(R.string.home_capacity),
+                        value = stringResource(R.string.home_capacity_value, ferryInfo.schedule.approximateCapacity),
                         modifier = Modifier.weight(1f),
                     )
                     InfoCard(
                         icon = Icons.Default.MoneyOff,
-                        title = "Cost",
-                        value = "FREE",
+                        title = stringResource(R.string.home_cost),
+                        value = stringResource(R.string.home_cost_value),
                         modifier = Modifier.weight(1f),
                     )
                 }
 
                 // Locations
-                Text("Ferry Locations", style = MaterialTheme.typography.titleMedium)
+                Text(stringResource(R.string.home_locations_section), style = MaterialTheme.typography.titleMedium)
 
-                LocationRow(label = "Iowa", location = ferryInfo.locations.iowa) {
+                LocationRow(label = stringResource(R.string.home_location_iowa), location = ferryInfo.locations.iowa) {
                     val uri = Uri.parse("geo:${ferryInfo.locations.iowa.latitude},${ferryInfo.locations.iowa.longitude}?q=${ferryInfo.locations.iowa.latitude},${ferryInfo.locations.iowa.longitude}(${Uri.encode(ferryInfo.locations.iowa.name)})")
                     try {
                         context.startActivity(Intent(Intent.ACTION_VIEW, uri))
@@ -117,7 +151,7 @@ fun HomeScreen(
                         // No app available to handle the intent
                     }
                 }
-                LocationRow(label = "Wisconsin", location = ferryInfo.locations.wisconsin) {
+                LocationRow(label = stringResource(R.string.home_location_wisconsin), location = ferryInfo.locations.wisconsin) {
                     val uri = Uri.parse("geo:${ferryInfo.locations.wisconsin.latitude},${ferryInfo.locations.wisconsin.longitude}?q=${ferryInfo.locations.wisconsin.latitude},${ferryInfo.locations.wisconsin.longitude}(${Uri.encode(ferryInfo.locations.wisconsin.name)})")
                     try {
                         context.startActivity(Intent(Intent.ACTION_VIEW, uri))
@@ -127,23 +161,23 @@ fun HomeScreen(
                 }
 
                 // Links
-                Text("Resources", style = MaterialTheme.typography.titleMedium)
+                Text(stringResource(R.string.home_resources_section), style = MaterialTheme.typography.titleMedium)
 
-                LinkRow(icon = Icons.Default.Link, label = "Facebook Updates") {
+                LinkRow(icon = Icons.Default.Link, label = stringResource(R.string.home_link_facebook)) {
                     try {
                         context.startActivity(Intent(Intent.ACTION_VIEW, Uri.parse(ferryInfo.links.facebook)))
                     } catch (_: android.content.ActivityNotFoundException) {
                         // No app available to handle the intent
                     }
                 }
-                LinkRow(icon = Icons.Default.Traffic, label = "511 Iowa Traffic") {
+                LinkRow(icon = Icons.Default.Traffic, label = stringResource(R.string.home_link_traffic)) {
                     try {
                         context.startActivity(Intent(Intent.ACTION_VIEW, Uri.parse(ferryInfo.links.traffic)))
                     } catch (_: android.content.ActivityNotFoundException) {
                         // No app available to handle the intent
                     }
                 }
-                LinkRow(icon = Icons.Default.Language, label = "Iowa DOT Info") {
+                LinkRow(icon = Icons.Default.Language, label = stringResource(R.string.home_link_iowadot)) {
                     try {
                         context.startActivity(Intent(Intent.ACTION_VIEW, Uri.parse(ferryInfo.links.iowadot)))
                     } catch (_: android.content.ActivityNotFoundException) {
@@ -211,7 +245,7 @@ private fun LocationRow(
                 )
             }
             IconButton(onClick = onMapClick) {
-                Icon(Icons.Default.Map, contentDescription = "Open in Maps", tint = MaterialTheme.colorScheme.primary)
+                Icon(Icons.Default.Map, contentDescription = stringResource(R.string.home_open_in_maps), tint = MaterialTheme.colorScheme.primary)
             }
         }
     }
