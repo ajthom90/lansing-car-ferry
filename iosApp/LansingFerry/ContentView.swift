@@ -9,7 +9,9 @@ struct ContentView: View {
                 ProgressView("Loading ferry info...")
             } else if let ferryInfo = viewModel.ferryInfo {
                 TabView {
-                    HomeView(ferryInfo: ferryInfo)
+                    HomeView(ferryInfo: ferryInfo) {
+                            await viewModel.refresh()
+                        }
                         .tabItem {
                             Label("Home", systemImage: "house")
                         }

@@ -4,6 +4,7 @@ import Shared
 
 struct HomeView: View {
     let ferryInfo: FerryInfo
+    var onRefresh: (() async -> Void)?
 
     var body: some View {
         NavigationStack {
@@ -15,6 +16,9 @@ struct HomeView: View {
                     linksSection
                 }
                 .padding()
+            }
+            .refreshable {
+                await onRefresh?()
             }
             .navigationTitle("Lansing Car Ferry")
         }
