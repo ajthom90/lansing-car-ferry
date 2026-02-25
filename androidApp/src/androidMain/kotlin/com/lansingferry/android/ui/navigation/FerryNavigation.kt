@@ -24,6 +24,7 @@ import androidx.navigation.compose.composable
 import androidx.navigation.compose.currentBackStackEntryAsState
 import androidx.navigation.compose.rememberNavController
 import com.lansingferry.android.ui.screens.HomeScreen
+import com.lansingferry.android.ui.screens.FAQScreen
 import com.lansingferry.android.ui.screens.InfoScreen
 import com.lansingferry.shared.model.FerryInfo
 import kotlinx.serialization.Serializable
@@ -95,7 +96,7 @@ fun FerryNavigation(
                 InfoScreen(ferryInfo = ferryInfo)
             }
             composable<FaqRoute> {
-                Box(Modifier.fillMaxSize()) { Text("FAQ") }
+                FAQScreen(faqs = ferryInfo.faqs)
             }
         }
     }
