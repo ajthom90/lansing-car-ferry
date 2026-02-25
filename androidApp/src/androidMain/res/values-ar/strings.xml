@@ -59,6 +59,11 @@
     <string name="a11y_collapse">طي</string>
     <string name="a11y_back">رجوع</string>
 
+    <!-- Disclaimer -->
+    <string name="disclaimer">تم تطوير هذا التطبيق بواسطة أندرو ثوم، مطور مستقل، وليس تابعاً لولايتي آيوا أو ويسكونسن أو أي جهة حكومية. جميع المعلومات مقدمة على أساس أفضل جهد ممكن. لا يتحمل أندرو ثوم أي مسؤولية عن أي معلومات غير صحيحة أو قديمة في هذا التطبيق.</string>
+    <string name="privacy_policy">سياسة الخصوصية</string>
+    <string name="terms_of_use">شروط الاستخدام</string>
+
     <!-- Loading/Error states -->
     <string name="error_unexpected">حدث خطأ غير متوقع.</string>
 </resources>

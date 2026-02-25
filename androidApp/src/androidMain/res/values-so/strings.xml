@@ -59,6 +59,11 @@
     <string name="a11y_collapse">Yaree</string>
     <string name="a11y_back">Dib u noqo</string>
 
+    <!-- Disclaimer -->
+    <string name="disclaimer">Abka waxaa sameeyey Andrew Thom, oo ah horumariye madaxbanaan, mana ahan mid la xiriira dowladaha Iowa ama Wisconsin ama hay\'ad dowladeed kale. Dhammaan macluumaadku waa kuwo la bixiyey dadaal ahaan. Andrew Thom mas\'uul kama aha macluumaad khaldan ama duugoobay oo ku jira abkan.</string>
+    <string name="privacy_policy">Siyaasadda arrimaha gaarka ah</string>
+    <string name="terms_of_use">Shuruudaha isticmaalka</string>
+
     <!-- Loading/Error states -->
     <string name="error_unexpected">Khalad aan la filayn ayaa dhacay.</string>
 </resources>

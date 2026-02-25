@@ -15,6 +15,7 @@ struct HomeView: View {
                     quickInfoCards
                     locationsSection
                     linksSection
+                    disclaimerNotice
                 }
                 .padding()
             }
@@ -107,6 +108,22 @@ struct HomeView: View {
             }
         }
         .frame(maxWidth: .infinity, alignment: .leading)
+    }
+
+    private var disclaimerNotice: some View {
+        VStack(spacing: 8) {
+            Text("This app is developed by Andrew Thom, an independent developer, and is not affiliated with the States of Iowa or Wisconsin or any government agency. All information is provided on a best-effort basis. Andrew Thom cannot be held liable for any incorrect or outdated information in this application.")
+                .font(.caption)
+                .foregroundStyle(.secondary)
+                .multilineTextAlignment(.center)
+            HStack(spacing: 16) {
+                Link("Privacy Policy", destination: URL(string: "https://cdn.jsdelivr.net/gh/ajthom90/lansing-car-ferry@main/data/privacy-policy.html")!)
+                    .font(.caption)
+                Link("Terms of Use", destination: URL(string: "https://cdn.jsdelivr.net/gh/ajthom90/lansing-car-ferry@main/data/terms-of-use.html")!)
+                    .font(.caption)
+            }
+        }
+        .padding(.top, 8)
     }
 }
 

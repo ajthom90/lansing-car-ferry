@@ -59,6 +59,11 @@
     <string name="a11y_collapse">Collapse</string>
     <string name="a11y_back">Back</string>
 
+    <!-- Disclaimer -->
+    <string name="disclaimer">This app is developed by Andrew Thom, an independent developer, and is not affiliated with the States of Iowa or Wisconsin or any government agency. All information is provided on a best-effort basis. Andrew Thom cannot be held liable for any incorrect or outdated information in this application.</string>
+    <string name="privacy_policy">Privacy Policy</string>
+    <string name="terms_of_use">Terms of Use</string>
+
     <!-- Loading/Error states -->
     <string name="error_unexpected">An unexpected error occurred.</string>
 </resources>

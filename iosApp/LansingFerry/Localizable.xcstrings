@@ -1078,6 +1078,42 @@
         }
       }
     },
+    "Privacy Policy" : {
+      "comment" : "Privacy policy link label",
+      "extractionState" : "stale",
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "سياسة الخصوصية"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Política de privacidad"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Politique de confidentialité"
+          }
+        },
+        "so" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Siyaasadda arrimaha gaarka ah"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "隐私政策"
+          }
+        }
+      }
+    },
     "Prohibited" : {
       "comment" : "Prohibited vehicles disclosure group header",
       "extractionState" : "stale",
@@ -1217,6 +1253,77 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "尺寸限制"
+          }
+        }
+      }
+    },
+    "Terms of Use" : {
+      "comment" : "Terms of use link label",
+      "extractionState" : "stale",
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "شروط الاستخدام"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Términos de uso"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Conditions d'utilisation"
+          }
+        },
+        "so" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Shuruudaha isticmaalka"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "使用条款"
+          }
+        }
+      }
+    },
+    "This app is developed by Andrew Thom, an independent developer, and is not affiliated with the States of Iowa or Wisconsin or any government agency. All information is provided on a best-effort basis. Andrew Thom cannot be held liable for any incorrect or outdated information in this application." : {
+      "comment" : "Disclaimer notice at bottom of home screen",
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "تم تطوير هذا التطبيق بواسطة أندرو ثوم، مطور مستقل، وليس تابعاً لولايتي آيوا أو ويسكونسن أو أي جهة حكومية. جميع المعلومات مقدمة على أساس أفضل جهد ممكن. لا يتحمل أندرو ثوم أي مسؤولية عن أي معلومات غير صحيحة أو قديمة في هذا التطبيق."
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Esta aplicación fue desarrollada por Andrew Thom, un desarrollador independiente, y no está afiliada con los estados de Iowa o Wisconsin ni con ninguna agencia gubernamental. Toda la información se proporciona con el mejor esfuerzo posible. Andrew Thom no se hace responsable de cualquier información incorrecta o desactualizada en esta aplicación."
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Cette application est développée par Andrew Thom, un développeur indépendant, et n'est affiliée ni aux États de l'Iowa ou du Wisconsin ni à aucune agence gouvernementale. Toutes les informations sont fournies au mieux. Andrew Thom ne peut être tenu responsable de toute information incorrecte ou obsolète dans cette application."
+          }
+        },
+        "so" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Abka waxaa sameeyey Andrew Thom, oo ah horumariye madaxbanaan, mana ahan mid la xiriira dowladaha Iowa ama Wisconsin ama hay'ad dowladeed kale. Dhammaan macluumaadku waa kuwo la bixiyey dadaal ahaan. Andrew Thom mas'uul kama aha macluumaad khaldan ama duugoobay oo ku jira abkan."
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "本应用由独立开发者Andrew Thom开发，与爱荷华州、威斯康星州或任何政府机构无关。所有信息均为尽力提供，Andrew Thom对本应用中任何不正确或过时的信息不承担责任。"
           }
         }
       }

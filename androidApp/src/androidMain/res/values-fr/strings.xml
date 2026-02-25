@@ -59,6 +59,11 @@
     <string name="a11y_collapse">Réduire</string>
     <string name="a11y_back">Retour</string>
 
+    <!-- Disclaimer -->
+    <string name="disclaimer">Cette application est développée par Andrew Thom, un développeur indépendant, et n\'est affiliée ni aux États de l\'Iowa ou du Wisconsin ni à aucune agence gouvernementale. Toutes les informations sont fournies au mieux. Andrew Thom ne peut être tenu responsable de toute information incorrecte ou obsolète dans cette application.</string>
+    <string name="privacy_policy">Politique de confidentialité</string>
+    <string name="terms_of_use">Conditions d\'utilisation</string>
+
     <!-- Loading/Error states -->
     <string name="error_unexpected">Une erreur inattendue s\'est produite.</string>
 </resources>

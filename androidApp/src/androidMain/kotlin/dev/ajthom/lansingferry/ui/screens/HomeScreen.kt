@@ -184,6 +184,41 @@ fun HomeScreen(
                         // No app available to handle the intent
                     }
                 }
+
+                // Disclaimer
+                Spacer(Modifier.height(8.dp))
+                Text(
+                    text = stringResource(R.string.disclaimer),
+                    style = MaterialTheme.typography.bodySmall,
+                    color = MaterialTheme.colorScheme.onSurfaceVariant,
+                    textAlign = TextAlign.Center,
+                    modifier = Modifier.fillMaxWidth().padding(horizontal = 16.dp),
+                )
+                Row(
+                    horizontalArrangement = Arrangement.spacedBy(16.dp, Alignment.CenterHorizontally),
+                    modifier = Modifier.fillMaxWidth(),
+                ) {
+                    Text(
+                        text = stringResource(R.string.privacy_policy),
+                        style = MaterialTheme.typography.bodySmall,
+                        color = MaterialTheme.colorScheme.primary,
+                        modifier = Modifier.clickable {
+                            try {
+                                context.startActivity(Intent(Intent.ACTION_VIEW, Uri.parse("https://cdn.jsdelivr.net/gh/ajthom90/lansing-car-ferry@main/data/privacy-policy.html")))
+                            } catch (_: android.content.ActivityNotFoundException) {}
+                        },
+                    )
+                    Text(
+                        text = stringResource(R.string.terms_of_use),
+                        style = MaterialTheme.typography.bodySmall,
+                        color = MaterialTheme.colorScheme.primary,
+                        modifier = Modifier.clickable {
+                            try {
+                                context.startActivity(Intent(Intent.ACTION_VIEW, Uri.parse("https://cdn.jsdelivr.net/gh/ajthom90/lansing-car-ferry@main/data/terms-of-use.html")))
+                            } catch (_: android.content.ActivityNotFoundException) {}
+                        },
+                    )
+                }
             }
         }
     }

@@ -59,6 +59,11 @@
     <string name="a11y_collapse">Contraer</string>
     <string name="a11y_back">Atrás</string>
 
+    <!-- Disclaimer -->
+    <string name="disclaimer">Esta aplicación fue desarrollada por Andrew Thom, un desarrollador independiente, y no está afiliada con los estados de Iowa o Wisconsin ni con ninguna agencia gubernamental. Toda la información se proporciona con el mejor esfuerzo posible. Andrew Thom no se hace responsable de cualquier información incorrecta o desactualizada en esta aplicación.</string>
+    <string name="privacy_policy">Política de privacidad</string>
+    <string name="terms_of_use">Términos de uso</string>
+
     <!-- Loading/Error states -->
     <string name="error_unexpected">Ocurrió un error inesperado.</string>
 </resources>
