@@ -1,8 +1,8 @@
 [versions]
 kotlin = "2.1.20"
-ktor = "3.4.0"
+ktor = "3.1.2"
 kotlinx-serialization = "1.7.3"
-okio = "3.16.2"
+okio = "3.11.0"
 skie = "0.10.10"
 agp = "8.8.0"
 android-compileSdk = "35"
