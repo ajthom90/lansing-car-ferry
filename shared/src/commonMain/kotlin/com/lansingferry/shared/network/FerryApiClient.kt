@@ -14,6 +14,6 @@ class FerryApiClient(
     }
 
     companion object {
-        const val DEFAULT_BASE_URL = "https://ajthom90.github.io/lansing-car-ferry"
+        const val DEFAULT_BASE_URL = "https://cdn.jsdelivr.net/gh/ajthom90/lansing-car-ferry@main/data"
     }
 }
