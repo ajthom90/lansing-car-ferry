@@ -13,6 +13,7 @@
 		58319C56014FB3359F1929DF /* FAQView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90CA2F1185B4EBBA6C64A440 /* FAQView.swift */; };
 		7BFFC821F57F1ADB96C67A52 /* FerryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 016223D069D991502877E1A1 /* FerryViewModel.swift */; };
 		95C00DBA2AE69C074B8BBB10 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FEBF3364034FD5232667FAF /* ContentView.swift */; };
+		B9C6C347D467113F56AE1737 /* InfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB9A0F17F93F8E5FE77F7D5B /* InfoView.swift */; };
 		BC96AE129145A4CEFA10937E /* LansingFerryApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 276B0D3F779B8A362A5277DB /* LansingFerryApp.swift */; };
 		E88C44151A8396EB5E466B90 /* LiveCamerasView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A45F3106947302BFD67C47E8 /* LiveCamerasView.swift */; };
 /* End PBXBuildFile section */
@@ -27,6 +28,7 @@
 		90CA2F1185B4EBBA6C64A440 /* FAQView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FAQView.swift; sourceTree = "<group>"; };
 		A1A24A57F7F0680BFB015388 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		A45F3106947302BFD67C47E8 /* LiveCamerasView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveCamerasView.swift; sourceTree = "<group>"; };
+		AB9A0F17F93F8E5FE77F7D5B /* InfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoView.swift; sourceTree = "<group>"; };
 		FC6B5BA327111278E16708A3 /* LansingFerry.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = LansingFerry.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -53,6 +55,7 @@
 				892DC1630BC8CC70EFE10369 /* CameraDetailView.swift */,
 				90CA2F1185B4EBBA6C64A440 /* FAQView.swift */,
 				A1A24A57F7F0680BFB015388 /* HomeView.swift */,
+				AB9A0F17F93F8E5FE77F7D5B /* InfoView.swift */,
 				A45F3106947302BFD67C47E8 /* LiveCamerasView.swift */,
 			);
 			path = Views;
@@ -173,6 +176,7 @@
 				58319C56014FB3359F1929DF /* FAQView.swift in Sources */,
 				7BFFC821F57F1ADB96C67A52 /* FerryViewModel.swift in Sources */,
 				4B037504D0EA0AE4F7DDF069 /* HomeView.swift in Sources */,
+				B9C6C347D467113F56AE1737 /* InfoView.swift in Sources */,
 				BC96AE129145A4CEFA10937E /* LansingFerryApp.swift in Sources */,
 				E88C44151A8396EB5E466B90 /* LiveCamerasView.swift in Sources */,
 				209BCEFCE3B991F15456E0C3 /* VideoPlayerView.swift in Sources */,

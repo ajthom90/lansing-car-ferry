@@ -19,7 +19,7 @@ struct ContentView: View {
                             Label("Cameras", systemImage: "video")
                         }
 
-                    Text("Info")
+                    InfoView(ferryInfo: ferryInfo)
                         .tabItem {
                             Label("Info", systemImage: "info.circle")
                         }
